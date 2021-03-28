@@ -1,0 +1,120 @@
+1616944428503	geckodriver	INFO	Listening on 127.0.0.1:3158
+1616944431541	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\ParseHub\\parsehub.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofileyFgve2"
+console.log: new install: https://www.parsehub.com/download_client2
+console.log: download started
+console.log: download progress
+console.log: download progress
+console.log: download progress
+console.log: download progress
+console.log: download progress
+console.log: download progress
+console.log: download progress
+console.log: download progress
+console.warn: could not find updater
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+console.log: download progress
+JavaScript error: , line 0: uncaught exception: updater
+1616944954594	geckodriver	INFO	Listening on 127.0.0.1:3597
+1616944957686	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofiletIKYAd"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616944962527	Marionette	INFO	Listening on port 3607
+1616944963055	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://sports.sina.com.cn/js/1256/2013/gjzq/jquery-1.9.1.min.js, line 4: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1616945237406	Marionette	INFO	Stopped listening on port 3607
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
