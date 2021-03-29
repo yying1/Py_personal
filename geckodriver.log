@@ -1,120 +1,82 @@
-1616944428503	geckodriver	INFO	Listening on 127.0.0.1:3158
-1616944431541	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\ParseHub\\parsehub.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofileyFgve2"
-console.log: new install: https://www.parsehub.com/download_client2
-console.log: download started
-console.log: download progress
-console.log: download progress
-console.log: download progress
-console.log: download progress
-console.log: download progress
-console.log: download progress
-console.log: download progress
-console.log: download progress
-console.warn: could not find updater
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-console.log: download progress
-JavaScript error: , line 0: uncaught exception: updater
-1616944954594	geckodriver	INFO	Listening on 127.0.0.1:3597
-1616944957686	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofiletIKYAd"
+1617025733646	geckodriver	INFO	Listening on 127.0.0.1:7340
+1617025736682	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofilehYXzds"
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1616944962527	Marionette	INFO	Listening on port 3607
-1616944963055	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617025741857	Marionette	INFO	Listening on port 7351
+1617025742016	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: http://sports.sina.com.cn/js/1256/2013/gjzq/jquery-1.9.1.min.js, line 4: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
-1616945237406	Marionette	INFO	Stopped listening on port 3607
+1617025884210	Marionette	INFO	Stopped listening on port 7351
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1617026408241	geckodriver	INFO	Listening on 127.0.0.1:7891
+1617026411346	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofile1hq9pV"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617026416088	Marionette	INFO	Listening on port 7901
+1617026416180	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://sports.sina.com.cn/js/1256/2013/gjzq/jquery-1.9.1.min.js, line 4: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1617026482956	Marionette	INFO	Stopped listening on port 7901
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1617026865196	geckodriver	INFO	Listening on 127.0.0.1:8372
+1617026872038	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofileABNQPI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617026876660	Marionette	INFO	Listening on port 8381
+1617026876852	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617026902501	Marionette	INFO	Stopped listening on port 8381
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1617026979517	geckodriver	INFO	Listening on 127.0.0.1:8445
+1617026986322	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofileMRm5p7"
+1617026989277	Marionette	INFO	Listening on port 8455
+1617026989529	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617026995184	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1617027121194	Marionette	INFO	Stopped listening on port 8455
+1617027456565	geckodriver	INFO	Listening on 127.0.0.1:8798
+1617027463085	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofileUGWRYh"
+1617027466110	Marionette	INFO	Listening on port 8807
+1617027466329	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617027470359	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1617027513227	Marionette	INFO	Stopped listening on port 8807
+1617027664969	geckodriver	INFO	Listening on 127.0.0.1:8912
+1617027671381	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofileKHn7Zk"
+1617027674236	Marionette	INFO	Listening on port 8927
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1617027674575	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617027678401	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1617028033066	Marionette	INFO	Stopped listening on port 8927
+[Parent 10704, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1617028042901	geckodriver	INFO	Listening on 127.0.0.1:9105
+1617028049740	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofile53bSJT"
+1617028052641	Marionette	INFO	Listening on port 9114
+1617028052960	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617028058132	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1617028099581	Marionette	INFO	Stopped listening on port 9114
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1617028330230	geckodriver	INFO	Listening on 127.0.0.1:9240
+1617028370766	geckodriver	INFO	Listening on 127.0.0.1:9255
+1617028510409	geckodriver	INFO	Listening on 127.0.0.1:9300
+1617028554838	geckodriver	INFO	Listening on 127.0.0.1:9319
+1617028562850	geckodriver	INFO	Listening on 127.0.0.1:9323
+1617028569273	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofileW1BRcU"
+1617028572478	Marionette	INFO	Listening on port 9332
+1617028573001	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617028585384	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1617028663957	Marionette	INFO	Stopped listening on port 9332
+1617028714928	geckodriver	INFO	Listening on 127.0.0.1:9429
+1617028721377	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingy\\AppData\\Local\\Temp\\rust_mozprofileyveSOc"
+JavaScript error: resource://pdf.js/PdfJs.jsm, line 209: TypeError: Services.prefs.clearIntPref is not a function
+1617028724258	Marionette	INFO	Listening on port 9443
+1617028724584	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617028729920	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1617028810623	Marionette	INFO	Stopped listening on port 9443
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 12136, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
