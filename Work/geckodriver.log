@@ -17,3 +17,42 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1621869342978	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingyy\\AppData\\Local\\Temp\\rust_mozprofile.vzS9Gf3zTeuj"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1621869349737	Marionette	INFO	Listening on port 51967
+1621869349840	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621869411826	Marionette	INFO	Stopped listening on port 51967
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1621869518406	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingyy\\AppData\\Local\\Temp\\rust_mozprofile.1ZZdy9iAcHrS"
+Extension error: Error while loading 'jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/omni.ja!/chrome/browser/search-extensions/twitter/manifest.json' (NS_ERROR_FILE_NOT_FOUND) resource://gre/modules/Extension.jsm:570 :: readJSON/</<@resource://gre/modules/Extension.jsm:570:20
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+
+1621869524089	Marionette	INFO	Listening on port 52239
+1621869524379	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit {3602c84f-cc0a-4bb2-a357-f533cc6b24fb}.274877906946
+1621869562726	Marionette	INFO	Stopped listening on port 52239
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1621869918446	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yingyy\\AppData\\Local\\Temp\\rust_mozprofile.ZC8t8tsjHuDX"
+Extension error: Error while loading 'jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/omni.ja!/chrome/browser/search-extensions/twitter/manifest.json' (NS_ERROR_FILE_NOT_FOUND) resource://gre/modules/Extension.jsm:570 :: readJSON/</<@resource://gre/modules/Extension.jsm:570:20
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+
+1621869922575	Marionette	INFO	Listening on port 52544
+1621869922628	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit {3602c84f-cc0a-4bb2-a357-f533cc6b24fb}.274877906946
+1621869947975	Marionette	INFO	Stopped listening on port 52544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
