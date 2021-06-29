@@ -1,0 +1,3 @@
+3899dcbab79f92af727c2190bbd8abc5	ninja
+78d8c5d44aaad1bdcd8afe4e81181d82	kongfu
+18b754a05052eebb96ca010c5361867c	samurai
