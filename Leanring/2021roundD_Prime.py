@@ -8,7 +8,7 @@ Created on Fri Sep 17 11:57:43 2021
 # 2021-09-17
 # Trying with segment tree 
 from math import ceil, log2;
-ori = [16,94,62,67,91]
+ori = [1,2,3]
 
 # First, we build a tree of sums
 """ Function to construct segment tree
@@ -20,8 +20,9 @@ def constructST(arr, n) :
     # Allocate memory for the segment tree
  
     # Height of segment tree
-    x = (int)(ceil(log2(n)));
- 
+    x = (int)(ceil(log2(n)));#this means taking the power of 2 closest to n and >=n?
+    
+    
     # Maximum size of segment tree
     max_size = 2 * (int)(2**x) - 1;
      
@@ -34,7 +35,7 @@ def constructST(arr, n) :
     # Return the constructed segment tree
     return st;
 
-# A recursive function that constructs
+# A recursive function that constructs, meaning from leaf node (bottom) to top
 # Segment Tree for array[ss..se].
 # si is index of current node in segment tree st
 def constructSTUtil(arr, ss, se, st, si) :
