@@ -1,0 +1,35 @@
+16
+Troffle - Pikpak
+Pikpak - Lacry
+Honepy - Lacry
+Pikpak - Honepy
+Mocca - Carnival
+Bawnty - Honepy
+Troffle - Mocca
+Lacry - Maycorn
+Maycorn - Mocca
+Carnival - Honepy
+Bawnty - Mocca
+Mikliday - Honepy
+Honepy - Mocca
+Goldheath - Troffle
+Maycorn - Bawnty
+Carnival - Bawnty
+17
+Pikpak - Carnival
+Lacry - Carnival
+Troffle - Carnival
+Honepy - Maycorn
+Goldheath - Mikliday
+Bawnty - Goldheath
+Maycorn - Carnival
+Troffle - Lacry
+Pikpak - Mocca
+Carnival - Mikliday
+Maycorn - Pikpak
+Bawnty - Troffle
+Maycorn - Goldheath
+Mikliday - Mocca
+Maycorn - Troffle
+Mocca - Lacry
+Bawnty - Mikliday
