@@ -1,0 +1,15 @@
+Create
+a
+str
+variable
+named
+sentence
+and
+set
+it
+to
+the
+words
+in
+this
+sentence
