@@ -1,0 +1,12 @@
+id:lastName:firstName:department
+4:Jones:Sally:Sales
+5:Smith:Robert:Office
+7:Ng:Margaret:Sales
+8:Longworth:Harry:Office
+13:Young:Claire:Research
+17:Miller:Matt:Sales
+18:Toles:Tim:Office
+22:Barnes:Adam:Sales
+40:Xi:James:Office
+49:Adams:Donald:Office
+50:Karns:Ursula:Research

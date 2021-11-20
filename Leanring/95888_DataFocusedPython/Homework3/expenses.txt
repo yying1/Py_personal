@@ -1,0 +1,38 @@
+ID:Amount:Category:Date:Description
+5:5.25:supply:20190222:box of staples
+7:79.81:meal:20190222:lunch with ABC Corp. clients Al, Bob, and Cy
+4:43.00:travel:20190222:cab back to office
+4:383.75:travel:20190223:flight to Boston, to visit ABC Corp.
+22:55.00:travel:20190223:cab to ABC Corp. in Cambridge, MA
+17:23.25:meal:20190223:dinner at Logan Airport
+5:318.47:supply:20190224:paper, toner, pens, paperclips, tape
+22:142.12:meal:20190226:host dinner with ABC clients, Al, Bob, Cy, Dave, Ellie
+49:303.94:util:20190227:Peoples Gas
+49:121.07:util:20190227:Verizon Wireless
+8:7.59:supply:20190227:Python book (used)
+8:79.99:supply:20190227:spare 20" monitor
+13:49.86:supply:20190228:Stoch Cal for Finance II
+7:6.53:meal:20190302:Dunkin Donuts, drive to Big Inc. near DC
+7:127.23:meal:20190302:dinner, Tavern64
+22:33.07:meal:20190303:dinner, Uncle Julio's
+7:86.00:travel:20190304:mileage, drive to/from Big Inc., Reston, VA
+50:22.00:travel:20190304:tolls
+7:378.81:travel:20190304:Hyatt Hotel, Reston VA, for Big Inc. meeting
+8:1247.49:supply:20190306:Dell 7000 laptop/workstation
+40:6.99:supply:20190306:HDMI cable
+49:212.06:util:20190308:Duquesne Light
+8:23.86:supply:20190309:Practical Guide to Quant Finance Interviews
+5:195.89:supply:20190309:black toner, HP 304A, 2-pack
+22:86.00:travel:20190317:mileage, drive to/from Big Inc., Reston, VA
+18:32.27:meal:20190317:lunch at Clyde's with Fred and Gina, Big Inc.
+7:22.00:travel:20190317:tolls
+5:119.56:util:20190319:Verizon Wireless
+5:284.23:util:20190323:Peoples Gas
+5:8.98:supply:20190325:Flair pens5:22.95:supply:20190412:Bic pens
+4:149.95:travel:20190415:Car rental
+18:77.75:meal:20190416:Lunch with investors
+7:950.15:travel:20190418:flight to Chicago
+5:22.95:supply:20190412:Bic pens
+4:149.95:travel:20190415:Car rental
+18:77.75:meal:20190416:Lunch with investors
+7:950.15:travel:20190418:flight to Chicago

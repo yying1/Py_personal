@@ -1,0 +1,12 @@
+lastName,id,totalAmount
+Adams,49,637.0699999999999
+Barnes,22,316.19
+Jones,4,576.7
+Karns,50,22.0
+Longworth,8,1358.9299999999998
+Miller,17,23.25
+Ng,7,1650.53
+Smith,5,932.3800000000001
+Toles,18,110.02000000000001
+Xi,40,6.99
+Young,13,49.86
