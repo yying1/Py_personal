@@ -31,7 +31,29 @@ def getChildren(tree):
     List. Either an empty list or [child0_tree, child1_tree, child2_tree].
     """
     ### BEGIN YOUR CODE ###
-
+    if len(tree) < 4:
+        return []
+    else:
+        root_id = min(tree.keys())
+        layers = int(np.log(max(tree.keys())))-1
+        result_list = []
+        for child_root in [root_id*10,root_id*10+1,root_id*10+2]:
+            sub_tree = {}
+            sub_tree[child_root] = tree[child_root]
+            n = 1
+            sib_list = [child_root]
+            while n <= layers:
+                sib_list1 = []
+                for i in sib_list:
+                    if i*10<= max(tree.keys()) and len(tree[i]) > 0:
+                        sub_tree[i*10] = tree[i*10]
+                        sub_tree[i*10+1] = tree[i*10+1]
+                        sub_tree[i*10+2] = tree[i*10+2]
+                        sib_list1.extend([i*10,i*10+1,i*10+2])
+                n+=1
+                sib_list = sib_list1.copy()
+            result_list.append(sub_tree)
+        return result_list
 
     ### END YOUR CODE ###
 
@@ -49,7 +71,8 @@ def getData(tree):
         with shape (0, M).
     """
     ### BEGIN YOUR CODE ###
-
+    root_id = min(tree.keys())
+    return tree[root_id]
 
     ### END YOUR CODE ###
     
@@ -64,7 +87,7 @@ def getID(tree):
     integer
     """
     ### BEGIN YOUR CODE ###
-
+    return min(tree.keys())
 
     ### END YOUR CODE ###
 
@@ -124,7 +147,29 @@ def buildTree(data, split_list, root_id):
         tree.
     """
     ### BEGIN YOUR CODE ###
-
+    tree = {}
+    def buildTree_rec(tree,data,split_list,root_id):
+        s = split_list[0]
+        for n in range(3):
+            childID = root_id*10+n
+            child_data = np.zeros((0,data.shape[1]))
+            if n == 0:
+                child_data = data[data[:,s] < -1]
+            elif n == 1:
+                child_data = data[(data[:,s] > -1) & (data[:,s] < 1)]
+            elif n == 2:
+                child_data = data[data[:,s] > 1]
+            tree[childID] = child_data
+            if len(split_list) >= 2 and len(child_data)>0:
+                tree = buildTree_rec(tree,child_data,split_list[1:],childID)
+        return tree
+    if len(data) == 0 or len(split_list) == 0:
+        tree[root_id] = data
+        return tree
+    elif len(data) > 0 and len(split_list) > 0:
+        tree[root_id] = data
+        tree = buildTree_rec(tree,data,split_list,root_id)
+    return tree
 
     ### END YOUR CODE ###
 
@@ -180,8 +225,20 @@ def printTreeBF(tree):
     None
     """
     ### BEGIN YOUR CODE ###
-
-
+    root_id = min(tree.keys())
+    printNode(tree)
+    search_id = root_id*10
+    children = getChildren(tree)
+    children_list = children
+    while search_id < max(tree.keys()):
+        children_list1 = []
+        for i in children_list:
+            child_tree = i
+            printNode(child_tree)
+            children = getChildren(child_tree)
+            children_list1.extend(children)
+        search_id = search_id*10
+        children_list = children_list1.copy()
     ### END YOUR CODE ###
 
 def printTreeDF(tree):
@@ -202,8 +259,20 @@ def printTreeDF(tree):
     None
     """
     ### BEGIN YOUR CODE ###
-
-
+    root_id = min(tree.keys())
+    def df_rec(tree, root_id):
+        if root_id*10 in tree.keys():
+            children = getChildren(tree)
+            for i,v in enumerate(children):
+                child_tree = v
+                # if i == 0:
+                printNode(child_tree)
+                df_rec(child_tree, root_id*10+i)
+        else:
+            # printNode(tree)
+            pass
+    printNode(tree)
+    df_rec(tree,root_id)
     ### END YOUR CODE ###
 
 ###############################################################
@@ -288,13 +357,12 @@ if __name__ == '__main__':
         [-1.3, -1.4, -2.1],
         [0.9, 1.5, -0.6]])
 
-    task1_test0()
+    # task1_test0()
     # task1_testA(data1)
     # task1_testB(data1)
     # task1_testC(data1)
-
-    # PRINT_NODE_LIST = [] # Reset list before printing tree
-    # task2_testBF(data1)
+    PRINT_NODE_LIST = [] # Reset list before printing tree
+    task2_testBF(data1)
 
     # PRINT_NODE_LIST = [] # Reset list before printing tree
     # task2_testDF(data1)
