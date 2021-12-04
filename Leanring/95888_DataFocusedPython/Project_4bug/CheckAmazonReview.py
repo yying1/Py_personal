@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 #Name: Frank Yue Ying
-#Date: 2021-11-20
+#Date: 2021-11-30
 
 ## Note: this script extracts US customer reviews from the ASIN's review page on Amazon.Input is the URL string. Replace "B07JGL19WK" with the target ASIN. A Excel file named "AmazonReviewResult" will aslo be produced at the end.
 
@@ -27,6 +27,7 @@ def get_reviews(soup,all_reviews):
     except:
         pass
 
+#Main function to be called to extract reviews
 def main_checkAmazonReview(ASIN = "B07PXGQC1Q"):
     HEADERS = ({'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) \AppleWebKit/537.36 (KHTML, like Gecko) \Chrome/90.0.4430.212 Safari/537.36','Accept-Language': 'en-US, en;q=0.5'})
 
@@ -43,12 +44,20 @@ def main_checkAmazonReview(ASIN = "B07PXGQC1Q"):
 
     df = pd.DataFrame(all_reviews)
     df.to_excel("AmazonReviewResult.xlsx",index = False)
-    print(len(all_reviews))
-    print("------Review Titles:")
-    print(*[x['title'] for x in all_reviews],sep = "\n")
-    
+    #print(len(all_reviews))
+    #print("------Review Titles:")
+    #print(*[x['title'] for x in all_reviews],sep = "\n")
+
+#Function to get ASIN name
+def get_name(ASIN = "B07PXGQC1Q"):
+    HEADERS = ({'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) \AppleWebKit/537.36 (KHTML, like Gecko) \Chrome/90.0.4430.212 Safari/537.36','Accept-Language': 'en-US, en;q=0.5'})
+    soup= get_soup(f"https://www.amazon.com/product-reviews/{ASIN}/?ie=UTF8&reviewerType=all_reviews",HEADERS)
+    name = soup.find("a",{'data-hook':'product-link'}).text.strip()
+    return name
+
 if __name__ == "__main__":
     import requests
     from bs4 import BeautifulSoup
     import pandas as pd
     main_checkAmazonReview()
+    print( get_name())
