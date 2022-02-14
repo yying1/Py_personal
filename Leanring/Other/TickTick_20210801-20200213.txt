@@ -1,0 +1,360 @@
+August 1 - February 13Completed
+- [August 1] Python automation with OS - Week 4
+- [August 2] Codeabbey with Python: 1 per day
+- [August 2] Deep Learning - Week 2
+- [August 3] Codeabbey with Python: 1 per day
+- [August 3] Codeabbey with Java: 1 per day
+- [August 4] Codeabbey with Java: 1 per day
+- [August 4] Codeabbey with Java: 1 per day
+- [August 5] Codeabbey with Python: 1 per day
+- [August 5] Codeabbey with Python: 1 per day
+- [August 7] Codeabbey with Python: 1 per day
+- [August 7] Codeabbey with Java: 1 per day
+- [August 11] Setup Student Afford
+- [August 11] Housing
+- [August 12] 核酸 - 纸质英文报告
+- [August 12] Get a new phone #
+- [August 13] Online check-in flight
+- [August 16] Collect Student ID from office
+- [August 17] Intramural soccer application
+- [August 18] On campus job
+- [August 18] EverFi Courses
+- [August 18] Codeabbey with Python: 1 per day
+- [August 18] Codeabbey with Java: 1 per day
+- [August 19] Codeabbey with Python: 1 per day
+- [August 20] Codeabbey with Java: 1 per day
+- [August 20] Codeabbey with Python: 1 per day
+- [August 20] Codeabbey with Java: 1 per day
+- [August 20] Select Jobs on Handshake
+- [August 23] Codeabbey with Python: 1 per day
+- [August 25] Codeabbey with Python: 1 per day
+- [August 26] Codeabbey with Python: 1 per day
+- [August 28] Codeabbey with Java: 1 per day
+- [August 28] Codeabbey with Python: 1 per day
+- [August 28] Java assessment
+- [August 29] Codeabbey with Python: 1 per day
+- [August 29] session 1 readings+
+- [August 29] session 1 readings
+- [August 29] #95712_Java wk1 assessment
+- [August 30] Readings
+- [August 30] 2022 Summer Internship application
+- [August 30] #95712_Java Check zoom
+- [August 31] #94881_MagAnaPro  Presentation of project ideas
+- [August 31] 2022 Summer Internship application
+- [September 1] #94881_MagAnaPro Reading for first week
+- [September 1] #95799_Linux Prepare for first class
+- [September 2] #95712_Java Lab practices
+- [September 2] Weekly resume review
+- [September 2] 2022 Summer Internship application
+- [September 4] Kick Start Round D: Final Exam
+- [September 4] Codeabbey with Python: 1 per day
+- [September 5] Codeabbey with Java: 1 per day
+- [September 5] #95712_Java Video + SA 1
+- [September 7]  Linux lab0 install
+- [September 7] Learn Linux
+- [September 7] #95712_Java Prepare for day 1 test
+- [September 7] #95710_Eco Reading Chap 21
+- [September 7] #95712_Java Video & SA 2
+- [September 7] #94881_MagAnaPro 2nd project idea
+- [September 7] math for ML review
+- [September 9] record Bio video
+- [September 10] #95710_Eco hw1
+- [September 10] #94881_MagAnaPro writeup for the 2 ideas
+- [September 11] #95712_Java Prepare for class quiz sunday
+- [September 11] 2022 Summer Internship application
+- [September 11] Apply for the Google Job
+- [September 11] Weekly resume review
+- [September 11] 2022 Summer Internship application
+- [September 11] #95712_Java SA3
+- [September 12] Codeabbey with Java: 1 per day
+- [September 12] Codeabbey with Python: 1 per day
+- [September 12] #95710_Eco Reading Chap 22 & 23 2021-09-12
+- [September 13] #95799_Linux lab1
+- [September 14] 2022 Summer Internship application
+- [September 14] #95712_Java watch handling text data video in wk4
+- [September 14] Learn OS - Week 4
+- [September 14] #94881_MagAnaPro A lot of readings sunday
+- [September 14] #95710_Eco reading Chap 24 & 25.7-10
+- [September 15] #94881_MagAnaPro find project group
+- [September 15] #94881_MagAnaPro build knowledge network
+- [September 16] 2022 Summer Internship application
+- [September 16] #95799_Linux watch lecture 2
+- [September 17] #95710_Eco quiz prepare
+- [September 17] Weekly resume review
+- [September 19] Codeabbey with Java: 1 per day
+- [September 19] #95712_Java SA4 Sunday
+- [September 19] Codeabbey with Python: 1 per day
+- [September 21] #94881_MagAnaPro Project Data EDA
+- [September 22] #94881_MagAnaPro HW2: Selecting Data Sources
+- [September 23] #95799_Linux lab 2
+- [September 23] #95799_Linux quiz
+- [September 24] #95710_Eco HW2 09/23
+- [September 25] Weekly resume review
+- [September 25] 2022 Summer Internship application
+- [September 25] 2022 Summer Internship application
+- [September 25] Codeabbey with Java: 1 per day
+- [September 26] Codeabbey with Python: 1 per day
+- [September 26] #95712_Java SA 5
+- [September 26] #95712_Java Review CQ1 & Exam
+- [September 29] #95712_Java Review for Exam 1
+- [September 29] #94881_MagAnaPro hw3
+- [September 30] #95799_Linux Lab 3
+- [September 30] 2022 Summer Internship application
+- [September 30] 2022 Summer Internship application
+- [October 1] #95710_Eco Quiz 2 review
+- [October 1] Weekly resume review
+- [October 2] Codeabbey with Python: 1 per day
+- [October 3] #95712_Java HW1 10/2
+- [October 3] #95712_Java SA 6
+- [October 4] #95712_Java review encapsulation
+- [October 4] #95799_Linux watch videos for future videos, License analysis
+- [October 5] #95799_Linux License Analysis
+- [October 5] Codeabbey with Java: 1 per day
+- [October 5] 2022 Summer Internship application
+- [October 6] #95710_Eco Work on HWK 3 personal
+- [October 7] #95799_Linux Lab 4
+- [October 8] 2022 Summer Internship application
+- [October 8] #95710_Eco HW3
+- [October 10] #94881_MagAnaPro Design Pre format
+- [October 10] #95712_Java SA7 sunday
+- [October 10] #94881_MagAnaPro Final Presentation
+- [October 11] Codeabbey with Python: 1 per day
+- [October 11] Weekly resume review
+- [October 12] Codeabbey with Java: 1 per day
+- [October 12] 2022 Summer Internship application
+- [October 13] #94881_MagAnaPro Final Project Report wed
+- [October 14] #95799_Linux Lab 6 Scripting 10/14
+- [October 14] #95799_Linux Lab 5 Integration
+- [October 14] #95799_Linux Quiz 3 Sat
+- [October 17] KickStart Round D Prime question - fix Test 1
+- [October 17] Weekly resume review
+- [October 17] 2022 Summer Internship application
+- [October 17] #95712_Java SA9 sun
+- [October 19] Review Java & CSforML tmr
+- [October 19] #95712_Java try practice problems wed
+- [October 19] 2022 Summer Internship application
+- [October 19] #94700_ODI 3 readings 10/20
+- [October 20] #95712_Java lab 5
+- [October 21] Codeabbey with Java: 1 per day
+- [October 21] 2022 Summer Internship application
+- [October 21] #10607_CSforML Review Course tmr
+- [October 21] Codeabbey with Python: 1 per day
+- [October 22] #94700_ODI Course Review today
+- [October 23] Kickstart Round G P1:Dogs and Cats today
+- [October 23] Weekly resume review
+- [October 23] Codeabbey with Java: 1 per day
+- [October 23] Codeabbey with Python: 1 per day
+- [October 23] #94881_MagAnaPro readings
+- [October 23] #94881_MagAnaPro Readings 10/6
+- [October 23] #95710_Eco readings:2
+- [October 23] #95799_Linux Watch security video for Lab 4
+- [October 24] #10607_CSforML Review recitation content tmr
+- [October 24] #95712_Java SA 9 sun
+- [October 24] #94700_ODI 1 reading sun
+- [October 26] #95760_DMUU HW1 next wed 6pm
+- [October 26] #94700_ODI Elizabeth Parker Case 10/25
+- [October 26] #95712_Java Preapre for exam 2 tmr
+- [October 27] #10607_CSforML Review Mon Class tmr
+- [October 27] 2022 Summer Internship application
+- [October 28] 2022 Summer Internship application
+- [October 28] #10607_CSforML Review Wed's class tmr
+- [October 29] Weekly resume review
+- [October 29] #95760_DMUU book meeting for assignment 2 sat
+- [October 30] #95888_python hwk due sunday midnight
+- [October 31] #94700_ODI Read the book tmr
+- [October 31] #95712_Java SA 10 sun
+- [October 31] Codeabbey with Java: 1 per day
+- [November 1] #94700_ODI Book memo 11/1
+- [November 1] #10607_CSforML review recitiation materials SUN
+- [November 2] #95760_DMUU HW2 next wed
+- [November 2] math for ML review
+- [November 3] #94700_ODI read the group case sat
+- [November 3] #10607_CSforML HW1
+- [November 6] #94700_ODI produce case content sat
+- [November 7] #94700_ODI 1st Group Assignment 11-7
+- [November 7] #95888_python HW2 11/7
+- [November 7] #95712_Java hw2 11/6
+- [November 7] #95888_python team name next monday
+- [November 7] #95712_Java SA11 today
+- [November 7] Weekly resume review
+- [November 7] 2022 Summer Internship application
+- [November 7] 2022 Summer Internship application
+- [November 8] #95712_Java CQ TODAY
+- [November 8] #94700_ODI reading sun
+- [November 8] Codeabbey with Java: 1 per day
+- [November 9] #95888_python Review for Quiz tmr
+- [November 9] Tusimple data scientist hiring test sun
+- [November 10] #94700_ODI Review for quiz tmr
+- [November 11] #95760_DMUU Review for Midterm next thur
+- [November 11] 2022 Summer Internship application
+- [November 11] 2022 Summer Internship application
+- [November 11] Codeabbey with Python: 1 per day
+- [November 11] Codeabbey with Python: 1 per day
+- [November 14] #95888_python draft plan sat
+- [November 14] #95888_python Hw3 sun
+- [November 14] #95712_Java SA12
+- [November 15] Weekly resume review
+- [November 15] #94700_ODI Myth and insights
+- [November 16] #95712_Java review labs tmr
+- [November 16] 2022 Summer Internship application
+- [November 16] #10607_CSforML Review course content tmr
+- [November 17] #10607_CSforML Review for quiz Sat
+- [November 17] #94700_ODI reading wed
+- [November 17] #95888_python check lab tmr
+- [November 18] #95760_DMUU hw3 thurs
+- [November 19] #94700_ODI OrgChange Prep Assignment fri
+- [November 20] 2022 Summer Internship application
+- [November 20] #95888_python Amazon API 11/16
+- [November 21] #95888_python HW4 due sun
+- [November 22] #10607_CSforML HW2 due Sun
+- [November 22] #94700_ODI org change memo Mon
+- [November 23] Weekly resume review
+- [November 23] 2022 Summer Internship application
+- [November 24] #94700_ODI schedule meeting tmr
+- [November 25] Codeabbey with Python: 1 per day
+- [November 25] #95888_python HW5 sun
+- [November 25] #95888_python review Wisdom's code tmr
+- [November 25] 2022 Summer Internship application
+- [November 26] #95888_python project sat
+- [November 27] #10607_CSforML Review Course content and recitation fri
+- [November 28] #95760_DMUU HW4 11/29
+- [November 28] Weekly resume review
+- [November 28] #94700_ODI Merck Case 11/28
+- [November 28] #95712_Java SA14 sun
+- [November 29] #95760_DMUU book meeting for HW4 tmr
+- [December 1] #95888_python fix and submit lab 7 tmr
+- [December 1] #95712_Java lab 9 today
+- [December 3] #95760_DMUU review hw4 questions
+- [December 5] #95712_Java HW3 11/28
+- [December 5] #95888_python PPt & User Instruction tmr
+- [December 6] #95888_python App Recording mon
+- [December 6] #10607_CSforML HW3 Online
+- [December 7] #95888_python submit all files tmr
+- [December 7] 2022 Summer Internship application
+- [December 7] Weekly resume review
+- [December 7] 2022 Summer Internship application
+- [December 7] #95712_Java review plantmr
+- [December 8] #95712_Java Lab 4 B + Lab 4 D tmr
+- [December 8] #95712_Java Lab 6 B tmr
+- [December 8] #95712_Java Lab 8 B + Lab 8 D tmr
+- [December 8] #95712_Java Exam 2 tmr
+- [December 10] #95760_DMUU Practice problems tmr
+- [December 11] ASML internship doc tmr
+- [December 11] Weekly resume review
+- [December 12] 2022 Summer Internship application
+- [December 12] 2022 Summer Internship application
+- [December 12] terminate AWS Cost 12/30
+- [December 13] Codeabbey with Python: 1 per week
+- [December 13] Codeabbey with Java: 1 per week
+- [December 14] Codeabbey with Python: 1 per week
+- [December 14] 2022 Summer Internship application
+- [December 15] Codeabbey with Python: 1 per week
+- [December 16] Soccer Video Analytics Project KickStart tmr
+- [December 16] Codeabbey with Python: 1 per week
+- [December 17] 2022 Summer Internship application
+- [December 18] Weekly resume review
+- [December 18] Kick Start with Python: 1 problem per week
+- [December 19] Codeabbey with Java: 1 per week
+- [December 19] Codeabbey with Python: 1 per week
+- [December 21] 2022 Summer Internship application
+- [December 24] Roblox code assessment tmr
+- [December 24] 2022 Summer Internship application
+- [December 24] Soccer Project PDD wed
+- [December 25] Weekly resume review
+- [December 27] Codeabbey with Java: 1 per week
+- [December 27] Kick Start with Python: 1 problem per week
+- [December 28] Codeabbey with Python: 1 per week
+- [December 28] 2022 Summer Internship application
+- [December 29] Learn Google automation
+- [December 30] Kick Start with Python: 1 problem per week
+- [December 30] Python Auto with OS: Week 5
+- [January 1] Weekly resume review
+- [January 1] Codeabbey with Java: 1 per week
+- [January 1] Codeabbey with Python: 1 per week
+- [January 4] 2022 Summer Internship application
+- [January 6] 2022 Summer Internship application
+- [January 7] Kick Start with Python: 1 problem per week
+- [January 8] Weekly resume review
+- [January 9] FTP create GUI frame thur
+- [January 9] Codeabbey with Java: 1 per week
+- [January 9] Codeabbey with Python: 1 per week
+- [January 11] 2022 Summer Internship application
+- [January 13] 2022 Summer Internship application
+- [January 14] FTP Setup user interactions and click events 1/9
+- [January 15] Weekly resume review
+- [January 15] FTP Setup output and input services 1/16
+- [January 16] RPA Section 1: feasibility study
+- [January 17] Tencent Cloud Interview Preparation tmr
+- [January 17] Course Review and setup tmr
+- [January 17] Codeabbey with Java: 1 per week
+- [January 17] Codeabbey with Python: 1 per week
+- [January 18] 2022 Summer Internship application
+- [January 18] ask tusimple about remote today
+- [January 18] #speaking watch video today
+- [January 18] #ML Readings tue
+- [January 19] #AppliedML Preparations
+- [January 20] 2022 Summer Internship application
+- [January 21] FTP Wiki-doc today
+- [January 21] #AppliedML readings wed
+- [January 22] #DisSys readings today
+- [January 22] Weekly resume review
+- [January 23] #DisSys lab 1 friday
+- [January 23] #DigTrans deutsche bank case sun
+- [January 23] #speaking lighting round 1 sun
+- [January 23] #ML reading due sun
+- [January 24] #DisSys 2 checkpoints with TAs wed
+- [January 24] #AppliedML readings next tues
+- [January 25] 2022 Summer Internship application
+- [January 25] #AppliedML pre quiz tmr
+- [January 25] #speaking LR 2 today
+- [January 26] #ML Hw1 sun
+- [January 27] 2022 Summer Internship application
+- [January 28] #DisSys Lab 2
+- [January 28] Codeabbey with Java: 1 per week
+- [January 28] Codeabbey with Python: 1 per week
+- [January 29] Weekly resume review
+- [January 29] #DigTrans read case fri
+- [January 30] #speaking Chaff Presentation sun
+- [January 30] #DigTrans Doc Case sun
+- [January 30] #DisSys readings today
+- [January 30] #DisSys pre-quiz tmr
+- [January 31] #DigTrans writeup tmr
+- [January 31] #AppliedML Assignment 1 2/1
+- [January 31] new year contact monday 11 am
+- [February 1] #AppliedML reading Monday
+- [February 1] 2022 Summer Internship application
+- [February 1] #DisSys Lab setup tmr
+- [February 1] #speaking presentation tmr
+- [February 1] #ML readings today
+- [February 1] #DigTrans meeting setup tmr
+- [February 2] J&J Interview and Assessment thurs
+- [February 2] #AppliedML reading Wed
+- [February 3] 2022 Summer Internship application
+- [February 3] #DigTrans Adidas Case Wed
+- [February 5] #AppliedML watch recording today
+- [February 5] #ML HW2 2/4
+- [February 5] #ML resubmit hw1 today
+- [February 5] #ML HW3 upload and breakdown today
+- [February 5] #AppliedML Confirm project date today
+- [February 6] #speaking LR4 Simple Explanation sun
+- [February 6] #DisSys Lab3 sun
+- [February 7] #DisSys Pre-class quiz tmr
+- [February 7] #DisSys Readings tmr
+- [February 7] #DigTrans Adidas Writeup Sun
+- [February 7] #AppliedML prequiz mon
+- [February 8] #speaking Final Project Review wed
+- [February 9] Weekly resume review
+- [February 9] 2022 Summer Internship application
+- [February 9] Kick Start with Python: 1 problem per week
+- [February 9] #speaking midterm check with TA wed
+- [February 9] #AppliedML pre quiz wed
+- [February 10] #ML HW3 KNN mon
+- [February 10] #ML HW3 Decision Tree tmr
+- [February 10] #DisSys Lab4 tmr
+- [February 10] 2022 Summer Internship application
+- [February 10] #ML HW3 Perceptron Tue
+- [February 11] #DigTrans Read Amgen Case tmr
+- [February 11] #ML HW3 Linear Regress Wed
+- [February 12] #DisSys Project 1 2/11
+- [February 13] #DisSys check reading tmr
+- [February 13] Weekly resume review
