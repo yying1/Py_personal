@@ -1,3 +1,5 @@
+## Frank Yue Ying (yying2)
+
 # This file was created starting the cookie2.py from Think Bayes
 # That code implements a simple Naive Bayes model where there is only one feature, namely
 # the flavor of the cookie that was selected from a bowl.
@@ -66,29 +68,29 @@ def read_data ():
                     else:
                         featuredict[featlist[x]].append(row[x])
                         countdict[conc(featlist[x],row[x],localclassval)] = 1
-                                 
+    featuredict['humidity'].append('unknown')                    
 
 # this function computes the conditional probability of the feature called feat having 
 # the value featval given that the class value is classval
 def condprob (classval, feat, featval):
 ## Modify this function to use the value of smoothing
-    total = 0  # This will be the total number of instances of class value = classval
-    val = 0 # this will be the number of times that feat was of value featval when class was classval
-    
+    total = 0+smoothing*(len(featuredict[feat]))  # This will be the total number of instances of class value = classval
+    val = 0+smoothing # this will be the number of times that feat was of value featval when class was classval
     
     for fval in featuredict[feat]:
         count = countdict[conc(feat,fval,classval)] 
         total += count
         if fval == featval:
-            val = count
+            val += count
             
     # if featval never occred in the dataset, you need to handle this condition here
     if not(featval in featuredict[feat]):
-        total += 0
-        val = 0
-        
+        ##if 'unknown' not in featuredict[feat]:
+            total += smoothing
+            val = smoothing
+#     print(val,total)
     val = float(val)/total # here is where you finally compute the conditional probability
-
+    
     return val
 
 def condprob_check(data):
@@ -169,7 +171,9 @@ class Weather(Pmf):
         if data == ['overcast','hot','normal','TRUE','?']:
             condprob_check(data)
 
-        like = condprob(hypo, featlist[0], data[0]) # this is the conditional probability of
+        for i in range(4):
+            like = like * condprob(hypo, featlist[i], data[i]) 
+                                                    # this is the conditional probability of
                                                     # the value (in data) of the feature (in
                                                     # featlist) given the class value (in hypo)
                                                     # note that featlist lists all of the features
