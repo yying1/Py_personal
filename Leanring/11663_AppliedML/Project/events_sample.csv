@@ -1,0 +1,11 @@
+id_odsp,id_event,sort_order,time,text,event_type,event_type2,side,event_team,opponent,player,player2,player_in,player_out,shot_place,shot_outcome,is_goal,location,bodypart,assist_method,situation,fast_break
+UFot0hit/,UFot0hit1,1,2,Attempt missed. Mladen Petric (Hamburg) left footed shot from the left side of the box is high and wide to the left. Assisted by Gokhan Tore.,1,12.0,2,Hamburg SV,Borussia Dortmund,mladen petric,gokhan tore,,,6.0,2.0,0,9.0,2.0,1,1.0,0
+UFot0hit/,UFot0hit2,2,4,"Corner,  Borussia Dortmund. Conceded by Dennis Diekmeier.",2,,1,Borussia Dortmund,Hamburg SV,dennis diekmeier,dennis diekmeier,,,,,0,,,0,,0
+UFot0hit/,UFot0hit3,3,4,"Corner,  Borussia Dortmund. Conceded by Heiko Westermann.",2,,1,Borussia Dortmund,Hamburg SV,heiko westermann,heiko westermann,,,,,0,,,0,,0
+UFot0hit/,UFot0hit4,4,7,Foul by Sven Bender (Borussia Dortmund).,3,,1,Borussia Dortmund,Hamburg SV,sven bender,,,,,,0,,,0,,0
+UFot0hit/,UFot0hit5,5,7,Gokhan Tore (Hamburg) wins a free kick in the defensive half.,8,,2,Hamburg SV,Borussia Dortmund,gokhan tore,,,,,,0,2.0,,0,,0
+UFot0hit/,UFot0hit6,6,9,Hand ball by Jose Paolo Guerrero (Hamburg).,10,,2,Hamburg SV,Borussia Dortmund,jose paolo guerrero,,,,,,0,,,0,,0
+UFot0hit/,UFot0hit7,7,10,"Corner,  Hamburg. Conceded by Lukasz Piszczek.",2,,2,Hamburg SV,Borussia Dortmund,lukasz piszczek,lukasz piszczek,,,,,0,,,0,,0
+UFot0hit/,UFot0hit8,8,11,Chris Lowe (Borussia Dortmund) wins a free kick in the defensive half.,8,,1,Borussia Dortmund,Hamburg SV,chris lowe,,,,,,0,2.0,,0,,0
+UFot0hit/,UFot0hit9,9,11,Foul by Gojko Kacar (Hamburg).,3,,2,Hamburg SV,Borussia Dortmund,gojko kacar,,,,,,0,,,0,,0
+UFot0hit/,UFot0hit10,10,13,Foul by Gokhan Tore (Hamburg).,3,,2,Hamburg SV,Borussia Dortmund,gokhan tore,,,,,,0,,,0,,0
