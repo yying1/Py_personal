@@ -1,0 +1,106 @@
+DEBUG:Output for tiny dataset:Epoch 0
+DEBUG:Output for tiny dataset:	SGD with respect to sample 0
+DEBUG:Output for tiny dataset:		Begin forward pass
+DEBUG:Output for tiny dataset:			Value of a (before sigmoid):
+DEBUG:Output for tiny dataset:[[0. 0. 0. 0.]]
+DEBUG:Output for tiny dataset:			Value of z (after sigmoid):
+DEBUG:Output for tiny dataset:[[1.  0.5 0.5 0.5 0.5]]
+DEBUG:Output for tiny dataset:			Value of b (before softmax):
+DEBUG:Output for tiny dataset:[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+DEBUG:Output for tiny dataset:			Value of y_hat (after softmax):
+DEBUG:Output for tiny dataset:[[0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1]]
+DEBUG:Output for tiny dataset:			Cross entropy: 2.3025850929940455
+DEBUG:Output for tiny dataset:		Begin backward pass
+DEBUG:Output for tiny dataset:			d(loss)/d(b):
+DEBUG:Output for tiny dataset:[[ 0.1  0.1  0.1  0.1  0.1  0.1  0.1  0.1  0.1 -0.9]]
+DEBUG:Output for tiny dataset:			d(loss)/d(beta):
+DEBUG:Output for tiny dataset:[[ 0.1   0.05  0.05  0.05  0.05]
+ [ 0.1   0.05  0.05  0.05  0.05]
+ [ 0.1   0.05  0.05  0.05  0.05]
+ [ 0.1   0.05  0.05  0.05  0.05]
+ [ 0.1   0.05  0.05  0.05  0.05]
+ [ 0.1   0.05  0.05  0.05  0.05]
+ [ 0.1   0.05  0.05  0.05  0.05]
+ [ 0.1   0.05  0.05  0.05  0.05]
+ [ 0.1   0.05  0.05  0.05  0.05]
+ [-0.9  -0.45 -0.45 -0.45 -0.45]]
+DEBUG:Output for tiny dataset:			d(loss)/d(z):
+DEBUG:Output for tiny dataset:[[0. 0. 0. 0.]]
+DEBUG:Output for tiny dataset:			d(loss)/d(a):
+DEBUG:Output for tiny dataset:[[0. 0. 0. 0.]]
+DEBUG:Output for tiny dataset:			d(loss)/d(alpha):
+DEBUG:Output for tiny dataset:[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+DEBUG:Output for tiny dataset:		Update weights
+DEBUG:Output for tiny dataset:			New alpha:
+DEBUG:Output for tiny dataset:[[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]
+DEBUG:Output for tiny dataset:			New beta:
+DEBUG:Output for tiny dataset:[[-0.09995004 -0.0998006  -0.0998006  -0.0998006  -0.0998006 ]
+ [-0.09995004 -0.0998006  -0.0998006  -0.0998006  -0.0998006 ]
+ [-0.09995004 -0.0998006  -0.0998006  -0.0998006  -0.0998006 ]
+ [-0.09995004 -0.0998006  -0.0998006  -0.0998006  -0.0998006 ]
+ [-0.09995004 -0.0998006  -0.0998006  -0.0998006  -0.0998006 ]
+ [-0.09995004 -0.0998006  -0.0998006  -0.0998006  -0.0998006 ]
+ [-0.09995004 -0.0998006  -0.0998006  -0.0998006  -0.0998006 ]
+ [-0.09995004 -0.0998006  -0.0998006  -0.0998006  -0.0998006 ]
+ [-0.09995004 -0.0998006  -0.0998006  -0.0998006  -0.0998006 ]
+ [ 0.09999938  0.09999753  0.09999753  0.09999753  0.09999753]]
+DEBUG:Output for tiny dataset:	SGD with respect to sample 1
+DEBUG:Output for tiny dataset:		Begin forward pass
+DEBUG:Output for tiny dataset:			Value of a (before sigmoid):
+DEBUG:Output for tiny dataset:[[0. 0. 0. 0.]]
+DEBUG:Output for tiny dataset:			Value of z (after sigmoid):
+DEBUG:Output for tiny dataset:[[1.  0.5 0.5 0.5 0.5]]
+DEBUG:Output for tiny dataset:			Value of b (before softmax):
+DEBUG:Output for tiny dataset:[[-0.29955123 -0.29955123 -0.29955123 -0.29955123 -0.29955123 -0.29955123
+  -0.29955123 -0.29955123 -0.29955123  0.29999444]]
+DEBUG:Output for tiny dataset:			Value of y_hat (after softmax):
+DEBUG:Output for tiny dataset:[[0.09241041 0.09241041 0.09241041 0.09241041 0.09241041 0.09241041
+  0.09241041 0.09241041 0.09241041 0.16830627]]
+DEBUG:Output for tiny dataset:			Cross entropy: 2.3815155971645616
+DEBUG:Output for tiny dataset:		Begin backward pass
+DEBUG:Output for tiny dataset:			d(loss)/d(b):
+DEBUG:Output for tiny dataset:[[ 0.09241041  0.09241041  0.09241041  0.09241041  0.09241041  0.09241041
+   0.09241041 -0.90758959  0.09241041  0.16830627]]
+DEBUG:Output for tiny dataset:			d(loss)/d(beta):
+DEBUG:Output for tiny dataset:[[ 0.09241041  0.04620521  0.04620521  0.04620521  0.04620521]
+ [ 0.09241041  0.04620521  0.04620521  0.04620521  0.04620521]
+ [ 0.09241041  0.04620521  0.04620521  0.04620521  0.04620521]
+ [ 0.09241041  0.04620521  0.04620521  0.04620521  0.04620521]
+ [ 0.09241041  0.04620521  0.04620521  0.04620521  0.04620521]
+ [ 0.09241041  0.04620521  0.04620521  0.04620521  0.04620521]
+ [ 0.09241041  0.04620521  0.04620521  0.04620521  0.04620521]
+ [-0.90758959 -0.45379479 -0.45379479 -0.45379479 -0.45379479]
+ [ 0.09241041  0.04620521  0.04620521  0.04620521  0.04620521]
+ [ 0.16830627  0.08415314  0.08415314  0.08415314  0.08415314]]
+DEBUG:Output for tiny dataset:			d(loss)/d(z):
+DEBUG:Output for tiny dataset:[[0.03362728 0.03362728 0.03362728 0.03362728]]
+DEBUG:Output for tiny dataset:			d(loss)/d(a):
+DEBUG:Output for tiny dataset:[[0.00840682 0.00840682 0.00840682 0.00840682]]
+DEBUG:Output for tiny dataset:			d(loss)/d(alpha):
+DEBUG:Output for tiny dataset:[[0.00840682 0.         0.00840682 0.00840682 0.00840682 0.        ]
+ [0.00840682 0.         0.00840682 0.00840682 0.00840682 0.        ]
+ [0.00840682 0.         0.00840682 0.00840682 0.00840682 0.        ]
+ [0.00840682 0.         0.00840682 0.00840682 0.00840682 0.        ]]
+DEBUG:Output for tiny dataset:		Update weights
+DEBUG:Output for tiny dataset:			New alpha:
+DEBUG:Output for tiny dataset:[[-0.09359729  0.         -0.09359729 -0.09359729 -0.09359729  0.        ]
+ [-0.09359729  0.         -0.09359729 -0.09359729 -0.09359729  0.        ]
+ [-0.09359729  0.         -0.09359729 -0.09359729 -0.09359729  0.        ]
+ [-0.09359729  0.         -0.09359729 -0.09359729 -0.09359729  0.        ]]
+DEBUG:Output for tiny dataset:			New beta:
+DEBUG:Output for tiny dataset:[[-0.16780047 -0.16759624 -0.16759624 -0.16759624 -0.16759624]
+ [-0.16780047 -0.16759624 -0.16759624 -0.16759624 -0.16759624]
+ [-0.16780047 -0.16759624 -0.16759624 -0.16759624 -0.16759624]
+ [-0.16780047 -0.16759624 -0.16759624 -0.16759624 -0.16759624]
+ [-0.16780047 -0.16759624 -0.16759624 -0.16759624 -0.16759624]
+ [-0.16780047 -0.16759624 -0.16759624 -0.16759624 -0.16759624]
+ [-0.16780047 -0.16759624 -0.16759624 -0.16759624 -0.16759624]
+ [-0.00055217 -0.00040451 -0.00040451 -0.00040451 -0.00040451]
+ [-0.16780047 -0.16759624 -0.16759624 -0.16759624 -0.16759624]
+ [ 0.08161746  0.08161594  0.08161594  0.08161594  0.08161594]]
