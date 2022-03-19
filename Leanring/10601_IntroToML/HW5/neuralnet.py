@@ -1,6 +1,18 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# ### Homework 5 | Frank Yue Ying | yying2@
+
+# In[1]:
+
+
 import numpy as np
 import argparse
 import logging
+
+
+# In[6]:
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('train_input', type=str,
@@ -23,6 +35,23 @@ parser.add_argument('learning_rate', type=float,
                     help='learning rate')
 parser.add_argument('--debug', type=bool, default=False,
                     help='set to True to show logging')
+
+
+# In[17]:
+
+
+# parser.train_input = "tiny_train_data.csv"
+# parser.validation_input = "tiny_validation_data.csv"
+# parser.train_out = "tiny_train_out.labels"
+# parser.validation_out = "tiny_validation_out.labels"
+# parser.metrics_out = "tiny_metrics_out.text"
+# parser.num_epoch = 1
+# parser.hidden_units = 4
+# parser.init_flag = 2
+# parser.learning_rate = 0.1
+
+
+# In[15]:
 
 
 def args2data(parser):
@@ -64,6 +93,8 @@ def args2data(parser):
             n_epochs, n_hid, init_flag, lr)
 
 
+# In[20]:
+
 
 def shuffle(X, y, epoch):
     """
@@ -78,6 +109,10 @@ def shuffle(X, y, epoch):
     ordering = np.random.permutation(N)
     return X[ordering], y[ordering]
 
+
+# In[34]:
+
+
 def random_init(shape):
     """
     Randomly initialize a numpy array of the specified shape
@@ -88,7 +123,12 @@ def random_init(shape):
     np.random.seed(np.prod(shape))
 
     # Implement random initialization here
+    rand_int = np.random.uniform(-0.1, 0.1,shape)
+    return rand_int
     raise NotImplementedError
+
+
+# In[36]:
 
 
 def zero_init(shape):
@@ -97,7 +137,11 @@ def zero_init(shape):
     :param shape: list or tuple of shapes
     :return: initialized weights
     """
+    return np.zeros(shape)
     raise NotImplementedError
+
+
+# In[73]:
 
 
 class NN(object):
@@ -119,16 +163,206 @@ class NN(object):
         self.n_output = output_size
 
         # initialize weights and biases for the models
-        # HINT: pay attention to bias here
-        # self.w1 = weight_init_fn([dim1, dim2])
-        # self.w2 =
+        #HINT: pay attention to bias here
+        self.w1 = weight_init_fn([hidden_size, input_size]) #alpha
+        self.w2 = weight_init_fn([output_size, hidden_size+1]) #beta
 
         # initialize parameters for adagrad
-        # self.epsilon =
-        # self.grad_sum_w1 =
-        # self.grad_sum_w2 =
+        self.epsilon = 0.00001
+        self.grad_sum_w1 = np.zeros([hidden_size, input_size]) #s for alpha
+        self.grad_sum_w2 = np.zeros([output_size, hidden_size+1]) #s for beta
 
         # feel free to add additional attributes
+
+
+# In[131]:
+
+
+# ## hidden Unit D = 4, K = 10, M = X_tr.shape[1] - 1
+# print(nn.w1.shape)
+# print(nn.w2.shape)
+# print(g_alpha.shape)
+# print(g_beta.shape)
+# print(X_tr.shape[1] - 1)
+
+
+# In[82]:
+
+
+def linear(x,nn,i): #used for both (X,alpha) and (z,beta)
+    if int(i) == 1:
+        return np.dot(x,nn.w1.T)
+    if int(i) == 2:
+        return np.dot(x,nn.w2[:,1:].T)
+# return a or b
+
+
+# In[68]:
+
+
+def sigmoid(a): #used for activation function of a
+    e = np.exp(-a)
+    return e / (1 + e)
+#return z
+
+
+# In[69]:
+
+
+def softmax(b): #used for activation function of b
+    e = np.exp(b).sum()
+    return np.exp(b)/e
+#return y_hat
+
+
+# In[70]:
+
+
+def forward(X, nn):
+    """
+    Neural network forward computation.
+    Follow the pseudocode!
+    :param X: input data
+    :param nn: neural network class
+    :return: output probability
+    """
+    a = linear(X,nn,1)
+    z = sigmoid(a)
+    b = linear(z,nn,2)
+    y_hat = softmax(b)
+    return y_hat
+    raise NotImplementedError
+
+
+# In[248]:
+
+
+def d_crossentropy(y,y_hat):
+    y_array = np.zeros([1,10])
+    y_array[0][y] = 1
+    return (-1*(y_array/y_hat)*np.dot(y_hat.T,(y_array-y_hat).T)).T
+# return g_b
+
+
+# In[285]:
+
+
+def d_linear(x,nn,i,g): # i = 1 for alpha, i = 2 for beta
+    if int(i) == 1:
+        return np.dot(g.T,x.reshape(1,len(x)))
+    if int(i) == 2:
+        return np.insert(x,0,1).reshape(len(x)+1,1).dot(g.T).T, np.dot(nn.w2[:,1:].T,g).T
+
+#return i = 2 --> (g_beta,g_z) or i = 1 --> (g_alpha,g_x)
+
+
+# In[239]:
+
+
+def d_sigmoid(a,z,g_z):
+    dz_da = np.exp(a)/(1+np.exp(a))**2
+    return np.multiply(g_z,dz_da)
+#return g_a
+
+
+# In[124]:
+
+
+def backward(X, y, y_hat, nn):
+    """
+    Neural network backward computation.
+    Follow the pseudocode!
+    :param X: input data
+    :param y: label
+    :param y_hat: prediction
+    :param nn: neural network class
+    :return:
+    d_w1: gradients for w1
+    d_w2: gradients for w2
+    """
+    a = linear(X,nn,1)
+    z = sigmoid(a)
+    b = linear(z,nn,2)
+    g_b = d_crossentropy(y,y_hat)
+    g_beta,g_z = d_linear(z,nn,2,g_b)
+    g_a = d_sigmoid(a,z,g_z)
+    g_alpha = d_linear(X,nn,1,g_a)
+    return g_alpha,g_beta
+    raise NotImplementedError
+
+
+# In[ ]:
+
+
+def avg_ce(e,X_tr, y_tr, nn, X_te, y_te,out_metrics):
+    y_array_tr = np.zeros([len(y_tr),10])
+    for i in range(len(y_tr)):
+        y_array_tr[i][y_tr[i]] = 1
+    y_array_te = np.zeros([len(y_te),10])
+    for i in range(len(y_te)):
+        y_array_te[i][y_te[i]] = 1
+    ytr_hat = forward(X_tr, nn)
+    tr_ce = -1.0/len(y_tr)*np.dot(y_array_tr,np.log(ytr_hat).T).sum()
+    yte_hat = forward(X_te, nn)
+    te_ce = -1.0/len(y_te)*np.dot(y_array_te,np.log(yte_hat).T).sum()
+    result = "epoch="+str(e+1)+" crossentropy(train): "+str(tr_ce)+"\n"+"epoch="+str(e+1)+" crossentropy(validation): "+str(te_ce)
+    return result
+
+
+# In[ ]:
+
+
+def train(X_tr, y_tr, nn, X_te, y_te,out_metrics):
+    """
+    Train the network using SGD for some epochs.
+    :param X_tr: train data
+    :param y_tr: train label
+    :param nn: neural network class
+    """
+    metrics = ""
+    for e in range(n_epochs):
+        X_tr_shuffle,y_tr_shuffle = shuffle(X_tr,y_tr,e)
+        for i in range(len(y_tr_shuffle)):
+            x = X_tr_shuffle[i]
+            y = y_tr_shuffle[i]
+            y_hat = forward(x, nn)
+            g_alpha,g_beta = backward(x, y, y_hat, nn)
+            nn.grad_sum_w1+= np.multiply(g_alpha,g_alpha)
+            nn.grad_sum_w2+= np.multiply(g_beta,g_beta)
+            nn.w1 = nn.w1 - ((nn.lr/(nn.grad_sum_w1+nn.epsilon)**0.5))*g_alpha
+            nn.w2 = nn.w2 - ((nn.lr/(nn.grad_sum_w2+nn.epsilon)**0.5))*g_beta
+            # nn.w1 = nn.w1 - nn.lr*g_alpha
+            # nn.w2 = nn.w2 - nn.lr*g_beta
+            
+        metrics = metrics +"\n"+avg_ce(e,X_tr, y_tr, nn, X_te, y_te,out_metrics)
+    return metrics.strip()
+
+
+# In[ ]:
+
+
+def test(X, y, nn):
+    """
+    Compute the label and error rate.
+    :param X: input data
+    :param y: label
+    :param nn: neural network class
+    :return:
+    labels: predicted labels
+    error_rate: prediction error rate
+    """
+    y_hats = np.empty(len(y), dtype=int)
+    for i in range(len(y)):
+        x = X[i]
+        y_hat = forward(x,nn)
+        print(y_hat)
+        y_hats[i] = int(np.where(y_hat == np.amax(y_hat))[0])
+    compare = np.equal(y,y_hats)
+    error_rate = (float(len(y))-np.count_nonzero(compare))/len(y)
+    return y_hats,error_rate
+
+
+# In[ ]:
 
 
 def print_weights(nn):
@@ -151,58 +385,13 @@ def print_weights(nn):
     logging.debug(nn.w2)
 
 
-def forward(X, nn):
-    """
-    Neural network forward computation.
-    Follow the pseudocode!
-    :param X: input data
-    :param nn: neural network class
-    :return: output probability
-    """
-
-    raise NotImplementedError
-
-
-def backward(X, y, y_hat, nn):
-    """
-    Neural network backward computation.
-    Follow the pseudocode!
-    :param X: input data
-    :param y: label
-    :param y_hat: prediction
-    :param nn: neural network class
-    :return:
-    d_w1: gradients for w1
-    d_w2: gradients for w2
-    """
-    raise NotImplementedError
-
-
-def test(X, y, nn):
-    """
-    Compute the label and error rate.
-    :param X: input data
-    :param y: label
-    :param nn: neural network class
-    :return:
-    labels: predicted labels
-    error_rate: prediction error rate
-    """
-    raise NotImplementedError
-
-
-def train(X_tr, y_tr, nn):
-    """
-    Train the network using SGD for some epochs.
-    :param X_tr: train data
-    :param y_tr: train label
-    :param nn: neural network class
-    """
-    raise NotImplementedError
+# In[4]:
 
 
 if __name__ == "__main__":
-
+    import numpy as np
+    import argparse
+    import logging
     args = parser.parse_args()
     if args.debug:
         logging.basicConfig(format='[%(asctime)s] {%(pathname)s:%(funcName)s:%(lineno)04d} %(levelname)s - %(message)s',
@@ -212,14 +401,22 @@ if __name__ == "__main__":
     # Note: You can access arguments like learning rate with args.learning_rate
 
     # initialize training / test data and labels
-
+    X_tr, y_tr, X_te, y_te, out_tr, out_te, out_metrics,n_epochs, n_hid, init_flag, lr = args2data(args)
     # Build model
-    # my_nn = NN()
-
+    if int(init_flag) == 1:
+        nn = NN(lr,n_epochs,random_init,X_tr.shape[1],n_hid,10)
+    if int(init_flag) == 2:
+        nn = NN(lr,n_epochs,zero_init,X_tr.shape[1],n_hid,10)
     # train model
-
+    metrics = train(X_tr, y_tr, nn, X_te, y_te,out_metrics)
     # test model and get predicted labels and errors
-
+    tran_pred, train_error = test(X_tr, y_tr, nn)
+    test_pred, test_error = test(X_te, y_te, nn)
     # write predicted label and error into file
+    np.savetxt(out_tr, tran_pred, delimiter="\n",fmt="%i")
+    np.savetxt(out_te, test_pred, delimiter="\n",fmt="%i")
+    with open(out_metrics, 'w') as f_out: 
+        f_out.write(metrics+"\n")
+        f_out.write("error(train): "+str(train_error)+"\n")
+        f_out.write("error(validation): "+str(test_error))
 
-    raise NotImplementedError
