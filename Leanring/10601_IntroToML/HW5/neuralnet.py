@@ -173,7 +173,9 @@ class NN(object):
         self.grad_sum_w2 = np.zeros([output_size, hidden_size+1]) #s for beta
 
         # feel free to add additional attributes
-
+        self.a = 0.0
+        self.z = 0.0
+        self.b = 0.0
 
 # In[131]:
 
@@ -193,7 +195,7 @@ def linear(x,nn,i): #used for both (X,alpha) and (z,beta)
     if int(i) == 1:
         return np.dot(x,nn.w1.T)
     if int(i) == 2:
-        return np.dot(x,nn.w2[:,1:].T)
+        return np.dot(x,nn.w2.T)
 # return a or b
 
 
@@ -227,8 +229,12 @@ def forward(X, nn):
     :return: output probability
     """
     a = linear(X,nn,1)
+    a = vector(a)
     z = sigmoid(a)
-    b = linear(z,nn,2)
+    b = linear(np.insert(z,0,1),nn,2)
+    nn.a = a
+    nn.z = np.insert(z,0,1)
+    nn.b = b
     y_hat = softmax(b)
     return y_hat
     raise NotImplementedError
@@ -237,10 +243,20 @@ def forward(X, nn):
 # In[248]:
 
 
+# def d_crossentropy(y,y_hat):
+#     y_array = np.zeros([1,10])
+#     y_array[0][y] = 1
+#     dl_dyhat = -1*(y_array/y_hat)
+#     dyhat_db = y_hat.T*(y_array-y_hat).T
+#     return np.dot(dl_dyhat,dyhat_db.T).T
+# # return g_b
+
 def d_crossentropy(y,y_hat):
     y_array = np.zeros([1,10])
-    y_array[0][y] = 1
-    return (-1*(y_array/y_hat)*np.dot(y_hat.T,(y_array-y_hat).T)).T
+    y_array[0][y] = 1.0
+    dl_dyhat = np.array([y_hat-y])
+    dyhat_db = y_hat.T*(y_array-y_hat).T
+    return np.dot(dl_dyhat,dyhat_db.T).T
 # return g_b
 
 
@@ -249,9 +265,12 @@ def d_crossentropy(y,y_hat):
 
 def d_linear(x,nn,i,g): # i = 1 for alpha, i = 2 for beta
     if int(i) == 1:
-        return np.dot(g.T,x.reshape(1,len(x)))
+        return np.dot(g.T,x.reshape(1,len(x))).T
     if int(i) == 2:
-        return np.insert(x,0,1).reshape(len(x)+1,1).dot(g.T).T, np.dot(nn.w2[:,1:].T,g).T
+        db_dz = nn.w2[:,1:]
+        g_beta = np.dot(g,x.reshape(len(x),1).T).T
+        g_z = np.dot(db_dz.T,g).T
+        return g_beta,g_z
 
 #return i = 2 --> (g_beta,g_z) or i = 1 --> (g_alpha,g_x)
 
@@ -268,27 +287,40 @@ def d_sigmoid(a,z,g_z):
 # In[124]:
 
 
+# def backward(X, y, y_hat, nn):
+#     """
+#     Neural network backward computation.
+#     Follow the pseudocode!
+#     :param X: input data
+#     :param y: label
+#     :param y_hat: prediction
+#     :param nn: neural network class
+#     :return:
+#     d_w1: gradients for w1
+#     d_w2: gradients for w2
+#     """
+#     a = nn.a
+#     z = nn.z
+#     g_b = d_crossentropy(y,y_hat)
+#     g_beta,g_z = d_linear(z,nn,2,g_b)
+#     g_a = d_sigmoid(a,z,g_z)
+#     g_alpha = d_linear(X,nn,1,g_a)
+#     return g_alpha,g_beta
+#     raise NotImplementedError
+
 def backward(X, y, y_hat, nn):
-    """
-    Neural network backward computation.
-    Follow the pseudocode!
-    :param X: input data
-    :param y: label
-    :param y_hat: prediction
-    :param nn: neural network class
-    :return:
-    d_w1: gradients for w1
-    d_w2: gradients for w2
-    """
-    a = linear(X,nn,1)
-    z = sigmoid(a)
-    b = linear(z,nn,2)
-    g_b = d_crossentropy(y,y_hat)
-    g_beta,g_z = d_linear(z,nn,2,g_b)
-    g_a = d_sigmoid(a,z,g_z)
-    g_alpha = d_linear(X,nn,1,g_a)
+    dl_dy = (y_hat-y).reshape(10,1)
+    dy_db = nn.z.reshape(nn.z.shape[0],1)
+    g_beta = np.dot(dl_dy,dy_db.T).T
+    dy_dz = nn.w2
+    dz_da = nn.z[1:]*(1-nn.z[1:])
+    da_dalpha = X.reshape(len(X),1)
+    dl_dz = np.dot(dl_dy.T,dy_dz[:,1:])
+    dl_da = dl_dz*dz_da
+    g_alpha=np.dot(dl_da.T,da_dalpha.T).T  
     return g_alpha,g_beta
     raise NotImplementedError
+
 
 
 # In[ ]:
@@ -301,9 +333,23 @@ def avg_ce(e,X_tr, y_tr, nn, X_te, y_te,out_metrics):
     y_array_te = np.zeros([len(y_te),10])
     for i in range(len(y_te)):
         y_array_te[i][y_te[i]] = 1
-    ytr_hat = forward(X_tr, nn)
+    
+    a = linear(X_tr,nn,1)
+    a = vector(a)
+    z = sigmoid(a)
+    z_bias = np.insert(z, 0, np.ones([1,z.shape[0]]), axis=1)
+    b = linear(z_bias,nn,2)
+    ytr_hat = softmax(b)
+
     tr_ce = -1.0/len(y_tr)*np.dot(y_array_tr,np.log(ytr_hat).T).sum()
-    yte_hat = forward(X_te, nn)
+    
+    a = linear(X_te,nn,1)
+    a = vector(a)
+    z = sigmoid(a)
+    z_bias = np.insert(z, 0, np.ones([1,z.shape[0]]), axis=1)
+    b = linear(z_bias,nn,2)
+    yte_hat = softmax(b)
+    
     te_ce = -1.0/len(y_te)*np.dot(y_array_te,np.log(yte_hat).T).sum()
     result = "epoch="+str(e+1)+" crossentropy(train): "+str(tr_ce)+"\n"+"epoch="+str(e+1)+" crossentropy(validation): "+str(te_ce)
     return result
@@ -312,7 +358,7 @@ def avg_ce(e,X_tr, y_tr, nn, X_te, y_te,out_metrics):
 # In[ ]:
 
 
-def train(X_tr, y_tr, nn, X_te, y_te,out_metrics):
+def train(X_tr, y_tr, nn, X_te, y_te,out_metrics,n_epochs):
     """
     Train the network using SGD for some epochs.
     :param X_tr: train data
@@ -327,13 +373,13 @@ def train(X_tr, y_tr, nn, X_te, y_te,out_metrics):
             y = y_tr_shuffle[i]
             y_hat = forward(x, nn)
             g_alpha,g_beta = backward(x, y, y_hat, nn)
-            nn.grad_sum_w1+= np.multiply(g_alpha,g_alpha)
-            nn.grad_sum_w2+= np.multiply(g_beta,g_beta)
-            nn.w1 = nn.w1 - ((nn.lr/(nn.grad_sum_w1+nn.epsilon)**0.5))*g_alpha
-            nn.w2 = nn.w2 - ((nn.lr/(nn.grad_sum_w2+nn.epsilon)**0.5))*g_beta
+            nn.grad_sum_w1+= np.multiply(g_alpha,g_alpha).T
+            nn.grad_sum_w2+= np.multiply(g_beta,g_beta).T
+            nn.w1 = nn.w1 - np.multiply(((nn.lr/(nn.grad_sum_w1+nn.epsilon)**0.5)),g_alpha.T)
+            nn.w2 = nn.w2 - np.multiply(((nn.lr/(nn.grad_sum_w2+nn.epsilon)**0.5)),g_beta.T)
             # nn.w1 = nn.w1 - nn.lr*g_alpha
             # nn.w2 = nn.w2 - nn.lr*g_beta
-            
+        print_weights(nn)    
         metrics = metrics +"\n"+avg_ce(e,X_tr, y_tr, nn, X_te, y_te,out_metrics)
     return metrics.strip()
 
@@ -351,12 +397,15 @@ def test(X, y, nn):
     labels: predicted labels
     error_rate: prediction error rate
     """
-    y_hats = np.empty(len(y), dtype=int)
+    y_hats = np.empty(len(y), dtype=float)
+    a = linear(X,nn,1)
+    a = vector(a)
+    z = sigmoid(a)
+    z_bias = np.insert(z, 0, np.ones([1,z.shape[0]]), axis=1)
+    b = linear(z_bias,nn,2)
+    y_hat_array = softmax(b)
     for i in range(len(y)):
-        x = X[i]
-        y_hat = forward(x,nn)
-        print(y_hat)
-        y_hats[i] = int(np.where(y_hat == np.amax(y_hat))[0])
+        y_hats[i] = np.argmax(y_hat_array[i])
     compare = np.equal(y,y_hats)
     error_rate = (float(len(y))-np.count_nonzero(compare))/len(y)
     return y_hats,error_rate
@@ -384,39 +433,77 @@ def print_weights(nn):
     logging.debug(f"shape of w2: {nn.w2.shape}")
     logging.debug(nn.w2)
 
+# In [ ]:
+
+parser.train_input = "small_train.csv"
+parser.validation_input = "small_validation.csv"
+parser.train_out = "small_train_out.labels"
+parser.validation_out = "small_validation_out.labels"
+parser.metrics_out = "small_metrics_out.text"
+
+# parser.train_input = "tiny_train.csv"
+# parser.validation_input = "tiny_validation.csv"
+# parser.train_out = "tiny_train_out.labels"
+# parser.validation_out = "tiny_validation_out.labels"
+# parser.metrics_out = "tiny_metrics_out.text"
+
+parser.num_epoch = 5
+parser.hidden_units = 4
+parser.init_flag = 1
+parser.learning_rate = 0.1    
+vector = np.vectorize(np.float64)
+
+logging.basicConfig(format='[%(asctime)s] {%(pathname)s:%(funcName)s:%(lineno)04d} %(levelname)s - %(message)s',
+                            datefmt="%H:%M:%S",
+                            level=logging.DEBUG)   
+    
+# initialize training / test data and labels
+X_tr, y_tr, X_te, y_te, out_tr, out_te, out_metrics,n_epochs, n_hid, init_flag, lr = args2data(parser)
+# Build model
+if int(init_flag) == 1:
+    nn = NN(lr,n_epochs,random_init,X_tr.shape[1],n_hid,10)
+if int(init_flag) == 2:
+    nn = NN(lr,n_epochs,zero_init,X_tr.shape[1],n_hid,10)
+# train model
+metrics = train(X_tr, y_tr, nn, X_te, y_te,out_metrics,n_epochs)
+# test model and get predicted labels and errors
+tran_pred, train_error = test(X_tr, y_tr, nn)
+test_pred, test_error = test(X_te, y_te, nn)
+print()
+
 
 # In[4]:
 
 
-if __name__ == "__main__":
-    import numpy as np
-    import argparse
-    import logging
-    args = parser.parse_args()
-    if args.debug:
-        logging.basicConfig(format='[%(asctime)s] {%(pathname)s:%(funcName)s:%(lineno)04d} %(levelname)s - %(message)s',
-                            datefmt="%H:%M:%S",
-                            level=logging.DEBUG)
-    logging.debug('*** Debugging Mode ***')
-    # Note: You can access arguments like learning rate with args.learning_rate
+# if __name__ == "__main__":
+#     import numpy as np
+#     import argparse
+#     import logging
+#     args = parser.parse_args()
+#     if args.debug:
+#         logging.basicConfig(format='[%(asctime)s] {%(pathname)s:%(funcName)s:%(lineno)04d} %(levelname)s - %(message)s',
+#                             datefmt="%H:%M:%S",
+#                             level=logging.DEBUG)
+#     logging.debug('*** Debugging Mode ***')
+#     # Note: You can access arguments like learning rate with args.learning_rate
 
-    # initialize training / test data and labels
-    X_tr, y_tr, X_te, y_te, out_tr, out_te, out_metrics,n_epochs, n_hid, init_flag, lr = args2data(args)
-    # Build model
-    if int(init_flag) == 1:
-        nn = NN(lr,n_epochs,random_init,X_tr.shape[1],n_hid,10)
-    if int(init_flag) == 2:
-        nn = NN(lr,n_epochs,zero_init,X_tr.shape[1],n_hid,10)
-    # train model
-    metrics = train(X_tr, y_tr, nn, X_te, y_te,out_metrics)
-    # test model and get predicted labels and errors
-    tran_pred, train_error = test(X_tr, y_tr, nn)
-    test_pred, test_error = test(X_te, y_te, nn)
-    # write predicted label and error into file
-    np.savetxt(out_tr, tran_pred, delimiter="\n",fmt="%i")
-    np.savetxt(out_te, test_pred, delimiter="\n",fmt="%i")
-    with open(out_metrics, 'w') as f_out: 
-        f_out.write(metrics+"\n")
-        f_out.write("error(train): "+str(train_error)+"\n")
-        f_out.write("error(validation): "+str(test_error))
+#     # initialize training / test data and labels
+#     X_tr, y_tr, X_te, y_te, out_tr, out_te, out_metrics,n_epochs, n_hid, init_flag, lr = args2data(args)
+#     # Build model
+#     if int(init_flag) == 1:
+#         nn = NN(lr,n_epochs,random_init,X_tr.shape[1],n_hid,10)
+#     if int(init_flag) == 2:
+#         nn = NN(lr,n_epochs,zero_init,X_tr.shape[1],n_hid,10)
+#     # train model
+#     metrics = train(X_tr, y_tr, nn, X_te, y_te,out_metrics,n_epochs)
+#     # test model and get predicted labels and errors
+#     tran_pred, train_error = test(X_tr, y_tr, nn)
+#     test_pred, test_error = test(X_te, y_te, nn)
+#     # write predicted label and error into file
+#     np.savetxt(out_tr, tran_pred, delimiter="\n",fmt="%i")
+#     np.savetxt(out_te, test_pred, delimiter="\n",fmt="%i")
+#     with open(out_metrics, 'w') as f_out: 
+#         f_out.write(metrics+"\n")
+#         f_out.write("error(train): "+str(train_error)+"\n")
+#         f_out.write("error(validation): "+str(test_error))
 
