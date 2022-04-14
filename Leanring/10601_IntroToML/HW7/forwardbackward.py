@@ -4,9 +4,7 @@
 
 # Imports
 # Don't import any other library
-
 import numpy as np
-import sys
 from utils import make_dict, parse_file, get_matrices, write_predictions, write_metrics
 import argparse
 import logging
@@ -44,7 +42,7 @@ parser.add_argument('--debug', type=bool, default=False,
 
 
 # TODO: Complete the main function
-def main():
+def main(args):
 
     # Get the dictionaries
     word_dict = make_dict(args.index_to_word)
@@ -53,9 +51,11 @@ def main():
     # Parse the validation file
     sentences, tags = parse_file(args.validation_input)
 
-    # Load your learned matrices
-    # Make sure you have them in the right orientation
-    init, emission, transition = get_matrices(args)
+    ## Load your learned matrices
+    ## Make sure you have them in the right orientation
+    ## TODO:  Uncomment the following line when you're ready!
+    
+    # init, emission, transition = get_matrices(args)
 
     
     # TODO: Conduct your inferences
@@ -63,16 +63,18 @@ def main():
     
     # TODO: Generate your probabilities and predictions
 
-  
-    predicted_tags = #TODO: store your predicted tags here (in the right order)
-    avg_log_likelihood = # TODO: store your calculated average log-likelihood here
+    
+    # predicted_tags = #TODO: store your predicted tags here (in the right order)
+    # avg_log_likelihood = # TODO: store your calculated average log-likelihood here
     
     accuracy = 0 # We'll calculate this for you
 
-    # Writing results to the corresponding files.  
-    # We're doing this for you :)
-    accuracy = write_predictions(args.prediction_file, sentences, predicted_tags, tags)
-    write_metrics(args.metric_file, avg_log_likelihood, accuracy)
+    ## Writing results to the corresponding files.  
+    ## We're doing this for you :)
+    ## TODO: Just Uncomment the following lines when you're ready!
+
+    # accuracy = write_predictions(args.prediction_file, sentences, predicted_tags, tags)
+    # write_metrics(args.metric_file, avg_log_likelihood, accuracy)
 
     return
 

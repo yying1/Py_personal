@@ -1,9 +1,6 @@
 import numpy as np
-import sys
-import os
 
 # This file is for your convenience.
-# DO NOT CHANGE THIS FILE!
 
 def make_dict(file_path: str)->dict:
     '''
@@ -16,8 +13,6 @@ def make_dict(file_path: str)->dict:
     Outputs:
         dictionary: Dictionary of the form {word: index}
     '''
-
-    assert os.path.exists(file_path), f"{file_path} doesn't exist. Check your arguments."
 
     dictionary = None
     with open(file_path, "r") as f:
@@ -37,8 +32,6 @@ def parse_file(file_path: str)->tuple:
         sentences: list of lists
         tags: list of lists
     '''
-    
-    assert os.path.exists(file_path), f"{file_path} doesn't exist. Check your arguments."
 
     sentences = []
     tags = []
@@ -84,7 +77,7 @@ def write_predictions(prediction_file: str, sentences: list, predicted_tags: lis
         tags: list of lists
     '''
 
-    assert os.path.exists(prediction_file), f"{prediction_file} doesn't exist. Check your arguments."
+    
     assert len(tags)==len(predicted_tags), f"Count mismatch. Check your predicted tags."
     assert type(sentences) == type(predicted_tags) == type(tags) == list, f"Type mistmatch"
     assert type(sentences[0]) == type(predicted_tags[0]) == type(tags[0]) == list, f"Type mistmatch"
@@ -120,7 +113,19 @@ def write_metrics(metric_file: str, avg_log_likelihood: float, accuracy: float)-
     Outputs:
         None
     '''
-    assert os.path.exists(metric_file), f"{metric_file} doesn't exist. Check your arguments."
+    
+    if type(avg_log_likelihood) == np.float64:
+        '''
+        In case you left it as numpy's float64
+        '''
+        avg_log_likelihood = float(avg_log_likelihood)
+    
+    elif type(avg_log_likelihood) == np.float32:
+        '''
+        In case you left it as numpy's float32
+        '''
+        avg_log_likelihood = float(avg_log_likelihood)
+
     assert type(avg_log_likelihood) == float, "Log likelihood should be float"
     assert type(accuracy) == float, "Accuracy should be float"
 
@@ -132,10 +137,10 @@ def write_metrics(metric_file: str, avg_log_likelihood: float, accuracy: float)-
         f.writelines(acc)
 
 def get_matrices(args) -> tuple:
-
-    assert os.path.exists(args.init), f"{args.init} doesn't exist. Check your arguments."
-    assert os.path.exists(args.emission), f"{args.emission} doesn't exist. Check your arguments."
-    assert os.path.exists(args.transition), f"{args.transition} doesn't exist. Check your arguments."
+    '''
+    Loads the three probability matrices.
+    init, emit, and trans
+    '''
     
     init = np.loadtxt(args.init)
     emission = np.loadtxt(args.emission)
