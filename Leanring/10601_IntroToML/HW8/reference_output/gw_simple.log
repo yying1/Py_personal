@@ -1,0 +1,3 @@
+[] {environment.py:reset:0260} DEBUG - Reset: {10: 1}
+[] {environment.py:reset:0260} DEBUG - Reset: {10: 1}
+[] {environment.py:step:0317} DEBUG - Step (action up): state {10: 1}, reward 0, done False

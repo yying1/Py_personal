@@ -1,0 +1,17 @@
+[] {environment.py:reset:0260} DEBUG - Reset: {10: 1}
+[] {environment.py:reset:0260} DEBUG - Reset: {10: 1}
+[] {environment.py:step:0317} DEBUG - Step (action up): state {10: 1}, reward 0, done False
+[] {environment.py:step:0317} DEBUG - Step (action up): state {10: 1}, reward 0, done False
+[] {environment.py:step:0317} DEBUG - Step (action up): state {10: 1}, reward 0, done False
+[] {environment.py:step:0317} DEBUG - Step (action up): state {10: 1}, reward 0, done False
+[] {environment.py:step:0317} DEBUG - Step (action up): state {9: 1}, reward 0, done False
+[] {environment.py:reset:0260} DEBUG - Reset: {10: 1}
+[] {environment.py:step:0317} DEBUG - Step (action up): state {11: 1}, reward 0, done False
+[] {environment.py:step:0317} DEBUG - Step (action up): state {7: 1}, reward 0, done False
+[] {environment.py:step:0317} DEBUG - Step (action up): state {3: 1}, reward 50, done True
+[] {environment.py:reset:0260} DEBUG - Reset: {10: 1}
+[] {environment.py:step:0317} DEBUG - Step (action up): state {10: 1}, reward 0, done False
+[] {environment.py:step:0317} DEBUG - Step (action down): state {9: 1}, reward 0, done False
+[] {environment.py:step:0317} DEBUG - Step (action up): state {9: 1}, reward 0, done False
+[] {environment.py:step:0317} DEBUG - Step (action down): state {9: 1}, reward 0, done False
+[] {environment.py:step:0317} DEBUG - Step (action left): state {9: 1}, reward 0, done False
