@@ -1,0 +1,123 @@
+Id,Display name,Created at,Updated at,Default source,Asset report,Asset report token,Id [User]
+3,Bank of America : Personal Checking 1070,"April 22, 2020 22:37","July 01, 2021 12:32",FALSE,dada1b65-4827-4265-96d5-7a8ee09168af,assets-production-77312115-54db-42e6-a1b5-8f4171aa5efd,47
+252,Bank of America : The Trades Group Inc 3301,"July 01, 2021 00:41","May 30, 2022 12:57",TRUE,1f682eac-260a-4ef0-8f13-d8a37f387cab,assets-production-b1229f60-3467-42e0-b1b9-acd4391655d3,47
+269,Citibank Online : Business Checking - 8946 8946,"April 13, 2022 17:03","May 30, 2022 12:57",FALSE,e86181a0-64aa-4594-bd28-ef16dd9ae109,assets-production-7436cb86-328a-4921-8a97-8eef57bb96bb,47
+2,Bank of America : The Trades Group Inc 3301,"April 21, 2020 19:03","January 07, 2022 19:28",TRUE,a871fe3f-e44f-4131-8c24-b36394040126,assets-production-ca4c0234-cd6d-4786-a4e9-e447aa97796c,48
+4,Chase : CHASE CHECKING 5494,"May 05, 2020 17:17","March 25, 2021 12:31",TRUE, - , - ,49
+30,Capital One : 360 Checking 9564,"October 25, 2020 17:15","December 10, 2020 21:58",TRUE, - , - ,56
+7,Chime : Chime Checking 2223,"June 16, 2020 06:37","December 10, 2020 21:58",TRUE, - , - ,62
+9,USAA : Bill Pay 7026,"June 25, 2020 10:53","November 10, 2021 00:57",TRUE,5e31104d-fe24-4f1f-a4ab-fea2e301452c,assets-production-53d6477d-3f6b-4dfb-9f0d-afe31c785790,65
+8,Chase : TOTAL CHECKING 0491,"June 21, 2020 02:15","July 22, 2021 12:31",TRUE,165127d6-850f-474e-a97d-ddde8dfe7a91,assets-production-48515714-a77e-4673-b2e8-03b7e4b50f04,67
+11,Campus USA Credit Union : BUSINESS ECHECKING 0821,"August 27, 2020 23:09","December 10, 2020 21:58",TRUE, - , - ,85
+12,Bank of America : Adv SafeBalance Banking 2872,"August 31, 2020 15:09","December 10, 2020 21:58",TRUE, - , - ,89
+13,Old National Bank : ONB Private Elite Checking 6196,"September 01, 2020 22:38","December 02, 2021 12:31",TRUE,0cb053c3-936f-42e6-9fe6-ca4df931d8c0,assets-production-6490c895-0ebe-4b18-a5c8-910d36d531a6,90
+22,Varo : Bank account 1374,"September 15, 2020 02:01","April 08, 2021 12:31",FALSE, - , - ,95
+23,Chime : Chime Checking 0030,"September 15, 2020 02:05","April 02, 2022 12:31",TRUE, - , - ,95
+18,Bank of America : Adv Plus Banking 7075,"September 12, 2020 20:16","May 27, 2021 18:48",TRUE,fd73c7a9-d314-4a36-ad0f-f04928917812,assets-production-28d8f989-d010-40f5-a29c-2584ada6c3e5,101
+17,Digital Federal Credit Union : Free Checking 0503,"September 12, 2020 19:41","March 15, 2021 00:07",FALSE, - , - ,104
+31,Digital Federal Credit Union : Primary Savings 8926,"November 25, 2020 22:15","February 20, 2021 21:31",FALSE, - , - ,104
+33,Capital One : 360 Checking 6445,"December 10, 2020 01:09","March 15, 2021 00:07",TRUE, - , - ,104
+20,Azlo : AZLO BUSINESS CHECKING *9254 9254,"September 13, 2020 22:00","December 10, 2020 21:58",TRUE, - , - ,105
+19,Fidelity : INDIVIDUAL 0566,"September 12, 2020 22:49","January 13, 2021 15:20",TRUE, - , - ,106
+32,Chime : Chime Checking 2856,"November 26, 2020 18:39","June 08, 2021 12:32",FALSE, - , - ,106
+21,Chase : TOTAL CHECKING 2893,"September 14, 2020 13:46","October 20, 2021 12:34",TRUE,9197d9b1-4c56-4b8a-922b-855d19118437,assets-production-e4ea55b5-4f1d-4ec0-b6a6-b8b7922ddb88,107
+256,Patelco Credit Union : FREE CHECKING 0410,"July 19, 2021 15:25","July 19, 2021 15:25",TRUE,3ffe577d-7f43-4b65-8ce7-fa045357310b,assets-production-47bb5d9f-b09b-4ed8-a5ce-832319d71207,113
+27,Regions Bank : Side Account 1843,"September 22, 2020 14:45","March 30, 2021 19:27",FALSE, - , - ,117
+29,Chime : Chime Checking 1063,"October 15, 2020 13:03","June 01, 2021 18:05",FALSE, - , - ,117
+35,Regions Bank : Molly Morrow 4595,"March 01, 2021 22:59","August 21, 2021 16:32",FALSE, - , - ,117
+175,Bank of America : Morrow Checking 9737,"June 01, 2021 18:04","January 21, 2022 12:33",FALSE,1c52e4ee-f032-40b6-9d7a-9368c4688bd3,assets-production-55a7568c-4b49-4d8c-9930-82d568d3d359,117
+260,Bank of America : Morrow Savings 8360,"August 21, 2021 16:32","January 21, 2022 12:34",FALSE,4b4adfea-58bc-423b-995f-b93d26ea0129,assets-production-003f5315-ded2-4dab-8423-7b8cf0b6226f,117
+263,MoneyLion : RoarMoney 1744,"September 13, 2021 20:06","April 15, 2022 12:35",FALSE,ba05a854-c94c-44f5-bbe7-3d4cb5199e85,assets-production-bc9960f5-3568-4811-ae24-c3c566152a3d,117
+266,Wells Fargo : Morrow Checking 4040,"December 07, 2021 14:37","December 07, 2021 14:37",TRUE,d82feeea-0570-4474-aa84-df3e77e94605,assets-production-8df6aa38-eb58-470d-9bd0-9a0692a49bb5,117
+40,San Francisco Fire Credit Union : Chikodi CHECKING 1251,"May 02, 2021 02:26","May 16, 2022 12:32",TRUE,d65fa807-dcd5-40a5-9f71-7973cae9aaa1,assets-production-cf573e10-732c-4f7d-b256-b548b31ee34d,125
+38,One : Bills 1305,"April 29, 2021 23:17","April 29, 2021 23:17",TRUE,cfe98e67-9598-4c6e-b299-0c9a0be9a176,assets-production-4e974453-a4d8-422f-9737-5d30abc48af3,126
+39,One : Spend 1301,"April 29, 2021 23:18","April 29, 2021 23:18",FALSE,3fbb7a6d-2471-4f67-9100-0a833143a564,assets-production-6e2d01d3-70f3-4fe2-ac56-efa4940bd526,126
+91,First Tech Federal Credit Union : Checking 9039,"May 17, 2021 21:45","June 13, 2021 12:34",TRUE,62db8a90-a194-43cf-8f7c-a2e23859e3fb,assets-production-df771967-24f2-41f1-8f35-e8b4cc989bc8,168
+73,Varo Bank : Varo Bank Account 6234,"May 12, 2021 18:36","May 12, 2021 18:36",TRUE,36e2d103-b306-4f60-90a0-d139fee6b4ce,assets-production-deb5f9cd-6e6a-40fc-a5e7-df5eb487cdad,173
+77,Town & Country Federal Credit Union : PRIMARY SHARE DRAFT 4699,"May 13, 2021 22:08","November 20, 2021 12:32",TRUE,f740bea9-d7e5-4e11-9a73-e24fa82b658c,assets-production-bc957c2b-9a4e-4654-813d-988827b86f0e,175
+180,Police and Fire Federal Credit Union : R CHAMBLISS CHECKING 4013,"June 05, 2021 19:21","June 05, 2021 19:21",TRUE,4df8cf38-f797-4d77-9266-8241c1c66489,assets-production-a50228dd-16ca-4355-822b-7bd1ea834f3a,178
+74,USAA : USAA CLASSIC CHECKING 5597,"May 13, 2021 12:11","May 02, 2022 02:53",TRUE,a06c8844-c9b1-4fa3-b948-536a3bfaec41,assets-production-10e7da59-9e0a-4f25-bbec-d4e8836cfb9e,183
+255,USAA : USAA CLASSIC CHECKING 3535,"July 12, 2021 14:07","May 02, 2022 02:53",FALSE,bbc643d0-6c66-466e-943d-edc30b97101a,assets-production-2a7354a2-5763-4ce2-a1f5-4ff1b945ae36,183
+75,Wells Fargo : PREFERRED CHECKING 5812,"May 13, 2021 18:04","May 13, 2021 18:04",TRUE,f47e6073-18fb-4bcb-85f7-a2199fced458,assets-production-f0a73878-5107-49b3-942b-297207a66030,186
+80,Fifth Third Bank : chris n meg 1014,"May 14, 2021 14:06","November 16, 2021 12:31",TRUE,05f63ead-2a1a-4fb3-b8d2-66ffb15d7394,assets-production-c4a54ad0-9dad-4671-88fe-05576b5bf8e7,187
+76,Chime : Chime Checking 6448,"May 13, 2021 20:59","May 13, 2021 20:59",TRUE,a85e4593-7994-488d-8cef-4632199c4754,assets-production-275e3f60-9dbb-46bb-a914-ba5fd70b5ab6,188
+78,Navy Federal Credit Union : EveryDay Checking 4273,"May 14, 2021 13:29","September 21, 2021 12:34",TRUE,ecdb0f43-2938-4769-9cd1-31250f5d7528,assets-production-4511c37c-093f-4f99-a34f-939e644af515,195
+79,Bank of America : Adv SafeBalance Banking 0437,"May 14, 2021 13:34","May 14, 2021 13:34",TRUE,cd8ba0fe-8c07-4120-9c42-c548c888b18e,assets-production-76b76b18-f5ca-4197-8faa-eb2ed320858e,197
+93,Chime : Chime Checking 8835,"May 20, 2021 21:09","May 20, 2021 21:09",TRUE,7c47bdf4-a25e-4bd9-945f-2f12803548ee,assets-production-58676b8b-98b2-4ee7-8c73-82d6407032c6,199
+81,Axos Bank : Checking **6888 6888,"May 14, 2021 14:40","May 19, 2022 20:16",FALSE,c0bf6c52-0608-4e0a-b7e5-7ba9a19b605a,assets-production-c1eb7e97-9f38-472a-adab-22c4a325f67d,200
+270,Ally Bank : Interest Checking 1727,"May 19, 2022 20:16","May 19, 2022 20:16",TRUE,977b23cd-e401-4999-bff2-c962455505c9,assets-production-66dfbb97-5e34-42e8-bdc3-e7af207358fa,200
+94,VyStar Credit Union : ******1662 1662,"May 21, 2021 01:18","May 21, 2021 12:34",TRUE,6c3e116f-6be5-41d0-aa09-ea9cfc1c99b4,assets-production-1f82dc39-be82-46d4-8a8a-d2e8244a260b,202
+82,BBVA : Checking *5912 5912,"May 14, 2021 17:16","September 10, 2021 12:35",TRUE,a08c8ec3-36d6-42a3-9946-1847e3978387,assets-production-a4ed3742-fc0c-4aab-b0b8-c3f1ca77fc24,203
+83,Navy Federal Credit Union : e-Checking 6710,"May 14, 2021 20:06","December 30, 2021 12:32",TRUE,14ed6aa0-ca83-4d52-b7b6-2216a621bf1d,assets-production-c8df2c64-57dc-4bbb-aeeb-747b64505410,206
+84,Woodforest National Bank : CHECKING 5824,"May 14, 2021 23:33","May 14, 2021 23:33",TRUE,57a87488-9903-44c4-8173-284cc9e0cade,assets-production-75ccc67b-6dcf-4085-b643-1b05b6a0175a,213
+88,Bank of America : CHECKING 3687,"May 17, 2021 18:45","August 09, 2021 02:34",FALSE,bc818f66-8edd-49a2-a488-8358d57cd422,assets-production-37296cfd-f855-4a51-9a13-de8359ac780f,216
+89,U.S. Bank : Checking 3380,"May 17, 2021 18:46","May 17, 2021 18:58",TRUE,2a3c2586-e4cf-49df-809a-94ed2ca396f0,assets-production-ec7443d0-53e8-435c-8de8-7f3a6dc76b59,216
+87,VyStar Credit Union : ******7550 7550,"May 17, 2021 11:48","May 17, 2021 12:34",TRUE,24643d5e-6418-42f1-b684-2eda1e6e35e2,assets-production-c5174667-c47e-4e1d-ba93-2392121b7ac9,217
+216,Navy Federal Credit Union : e-Checking 0566,"June 18, 2021 08:57","January 02, 2022 12:34",TRUE,52cdfee9-d219-4e6f-8015-b18fdb5ba091,assets-production-5da70a0b-a98a-4ffa-8729-f18ef1c8f46d,219
+85,Chase : PREMIER PLUS CKG 1988,"May 15, 2021 23:24","May 15, 2021 23:24",TRUE,47a952f2-a6cd-4901-8339-01d722687662,assets-production-97e617d4-48ed-4fb2-8280-62d34ed7ee90,227
+113,Bank of America : Business Adv Fundamentals 5429,"May 26, 2021 13:41","March 15, 2022 12:33",TRUE,c481b3be-c663-40f8-ac88-05d49bdc7ba5,assets-production-0e04b7fd-9420-4555-98c3-b1f02ac06e51,230
+86,Chime : Chime Checking 2856,"May 16, 2021 20:38","June 08, 2021 12:35",TRUE,85d07513-8dbe-4035-835a-01eaac7f5d0d,assets-production-b1c92137-1d97-405f-bf3b-398792429951,233
+90,Citi : Checking - 2053 2053,"May 17, 2021 20:49","May 17, 2021 20:49",TRUE,42d16909-5853-4caa-9765-98b76373e1fa,assets-production-185b79fe-2afb-4f18-a660-3074126260ab,243
+92,Wells Fargo : Stella 5337,"May 18, 2021 00:11","May 18, 2021 00:11",TRUE,8ddf0b59-1f17-443d-a920-7af5df175641,assets-production-12a88241-7aea-4737-a960-ac0c470184c1,246
+95,Digital Federal Credit Union : Free Checking 3327,"May 22, 2021 03:01","August 17, 2021 12:36",TRUE,7ecf9057-b15a-4fbe-9af0-fbaf6a816428,assets-production-1f64ea98-e984-4be0-98b0-f30cdf8c9224,250
+96,TD Bank : CONVENIENCE SAVINGS STMT 8530,"May 23, 2021 06:37","July 24, 2021 12:35",TRUE,8e8e5561-391a-49b0-b777-f5be657fb2e1,assets-production-cbc0215c-1c39-4c0c-9d53-16a33c28b035,252
+97,Level Bank : Level Checking 7910,"May 23, 2021 20:41","October 25, 2021 16:09",TRUE,92580075-5bf0-4e4a-b04d-8f4c67136b35,assets-production-f3ffe660-1a9c-42de-9960-23cf78ad4fae,253
+104,Wells Fargo : EVERYDAY CHECKING 2295,"May 25, 2021 15:48","May 25, 2021 15:48",TRUE,dd61b096-4220-4d23-80e9-c3e4c1e96d2e,assets-production-ed6e587b-7c62-4cf1-8bed-52fd8b3872c0,254
+98,Wells Fargo : WELLS FARGO CLEAR ACCESS BANKING 8044,"May 23, 2021 22:33","September 02, 2021 12:36",TRUE,ef111c66-faa6-4ba8-a94c-a1fce16ff616,assets-production-ca042e63-1241-41fc-8970-0ce0a18c57ed,255
+99,Navy Federal Credit Union : e-Checking 2492,"May 24, 2021 00:59","May 24, 2021 00:59",TRUE,b31dbca8-da94-4ad0-a36a-e2ee79dccdc9,assets-production-0bfd7f34-565f-4150-a9a9-275fd34056ae,259
+100,BBVA : Maria Jalilpour *7381 7381,"May 24, 2021 01:32","October 29, 2021 18:17",FALSE,82d0dfb5-3350-456f-a8b4-93d564892cd2,assets-production-d27dcf92-d28f-41ce-990d-461a1056affb,260
+264,Chase : TOTAL CHECKING 1681,"October 29, 2021 18:17","December 17, 2021 12:35",TRUE,a3b8f17d-9ea5-4da1-9891-22832770ff8f,assets-production-de744493-c10e-4290-a534-14a73bc49eff,260
+101,Chime : Chime Checking 4379,"May 24, 2021 02:44","May 24, 2021 02:44",TRUE,54028e11-544c-40a1-adc5-f57961a541fb,assets-production-9e46daa8-5c0e-498a-88b3-3a83435e6efb,261
+182,Varo Bank : Varo Bank Account 1773,"June 08, 2021 17:11","February 25, 2022 12:34",TRUE,50d286d4-662c-415e-b597-6e0551227e56,assets-production-ac0c0f5e-21b8-425c-a72a-90a3ef05510f,262
+171,Wells Fargo : EVERYDAY CHECKING 5989,"May 30, 2021 21:03","July 03, 2021 12:39",TRUE,f586594d-9503-4754-bca9-bd82df633f00,assets-production-369d83c7-967a-4a3c-9bdd-cfa0e8df4eb9,264
+111,Chime : Chime Checking 0510,"May 26, 2021 04:55","April 11, 2022 12:34",TRUE,23474028-4a93-4922-9021-2b5f84e69e9d,assets-production-e41ecc17-1aab-4bb0-8aab-b35b1e555dd2,266
+161,Varo Bank : Varo Bank Account 5436,"May 29, 2021 05:59","May 29, 2021 05:59",TRUE,eeb1d3be-5f6e-4954-b331-ca534396c2db,assets-production-8cf92936-0467-40bb-bb35-bf40d753d4e0,267
+103,Dave : Dave Banking 1880,"May 24, 2021 19:08","May 24, 2021 19:08",TRUE,cc139a02-5d34-4fa1-b5fe-b01c734fecdd,assets-production-d079f792-d103-4f92-a579-cdecd5b4a810,268
+102,Bank of America : Adv Plus Banking 4296,"May 24, 2021 18:55","May 29, 2021 12:34",TRUE,887009c7-162a-4e90-8337-c6670d956d85,assets-production-30e624bc-43c7-450b-a737-21c468b6d344,269
+105,VyStar Credit Union : ******1195 1195,"May 25, 2021 16:14","May 26, 2021 12:35",TRUE,2190256f-8496-4f87-a37e-23252e7b41ee,assets-production-575bf317-d5d7-4731-a98c-f6743e8eaddb,270
+118,TD Bank : TD BUSINESS PREMIER CHECKING 9513,"May 26, 2021 22:37","June 10, 2021 12:38",TRUE,28f184dd-fb89-4709-9936-263543e5b884,assets-production-0f6dcc84-81b0-4a6f-9f74-a7ac6810274d,274
+106,Comerica Bank : CHECKING (******4962) 4962,"May 25, 2021 16:29","July 17, 2021 12:36",TRUE,6527e196-832b-4f2a-899e-b0bcbb44bee8,assets-production-af193fc1-4a11-4f70-a664-2c8c991de628,277
+107,Wells Fargo : EVERYDAY CHECKING 2122,"May 25, 2021 17:02","August 19, 2021 12:37",TRUE,702e4276-dad6-4779-8e6f-d853f08c0870,assets-production-dae4f7c2-afb4-4645-8b08-a2a26ef3a6e5,278
+108,Bank of America : Adv Plus Banking 4168,"May 25, 2021 18:37","May 25, 2021 18:37",TRUE,126662fe-1b2d-4d46-875c-21a2999604ca,assets-production-28553d57-54b3-41bb-878e-d68b42966955,279
+253,Chase : TOTAL CHECKING 0204,"July 06, 2021 04:39","October 04, 2021 12:39",TRUE,af68d2c3-eeae-4e9d-9528-b65080864352,assets-production-7458d176-b799-45f4-b3b3-c6e3b13b7665,280
+109,Chime : Chime Checking 8537,"May 25, 2021 20:43","May 25, 2021 20:43",TRUE,64646c86-bb92-4c72-a9d3-76b634535433,assets-production-e1f16418-bb90-4c87-853e-4496b0bd9dbf,281
+170,TD Bank : TD CONVENIENCE CHECKING 9177,"May 30, 2021 19:44","April 20, 2022 12:34",TRUE,f0f28b2d-a470-45fb-8dc7-6f7724c3ce90,assets-production-ee64c617-d044-41ad-8c16-c8583b14186d,282
+215,Bank of America : Adv Plus Banking 3003,"June 13, 2021 22:20","April 03, 2022 12:34",TRUE,4586b93e-1ba1-462f-8576-8a9d5932c53d,assets-production-0e89606b-aea3-45bb-b614-8ce9b1fd1520,283
+110,Chase : TOTAL CHECKING 9625,"May 26, 2021 02:56","October 20, 2021 12:36",TRUE,65dd4e5c-eafc-4608-8815-6313415bd2d5,assets-production-3fb1234d-43a8-4c0b-bc6d-b7928a986de8,284
+261,Chime : Chime Checking 5876,"August 29, 2021 23:00","January 06, 2022 12:34",TRUE,73700048-aa4f-4a17-9bca-64b5e8ab03db,assets-production-4d6cf642-5af9-4cea-b392-be580a69fd6f,285
+125,Bank of America : Adv Plus Banking 1898,"May 28, 2021 06:21","June 10, 2021 12:39",TRUE,054244f0-4f62-4cba-a78e-d2b6fbde74a1,assets-production-5cb7bf4c-73e0-45bc-a7ab-767e5ba643ae,287
+114,Empower : Empower Checking 0907,"May 26, 2021 16:27","October 15, 2021 19:44",TRUE,844b6db8-4786-4c1b-bc4d-07f588e11de0,assets-production-92b2e956-fc49-45e8-87f4-a29d18a0613a,290
+115,Regions Bank : LIFEGREEN CHECKING 5787,"May 26, 2021 16:36","May 31, 2021 12:38",FALSE,45f4b79d-b537-43c2-95a0-dad5f24ae7cd,assets-production-75ce6ce2-dcd5-473c-b123-338a927c0f97,290
+127,USAA : USAA CASHBACK REWARDS CHECKING 6261,"May 28, 2021 21:26","May 28, 2021 21:26",TRUE,b27bfe3e-3b33-405e-9253-7b6643e80771,assets-production-4fc68b53-9c60-4ff6-9995-a818f11a15d0,291
+112,Chase : TOTAL CHECKING 9313,"May 26, 2021 06:51","August 24, 2021 12:36",TRUE,1a884f3d-5fee-497d-9b18-03b6c7c9660e,assets-production-06d852f4-7b9e-40af-a9f5-f82b180d12c3,292
+267,Teachers Federal Credit Union : Share Draft Checking 9458,"December 10, 2021 07:26","December 10, 2021 07:26",TRUE,b5848919-fe25-4c55-9314-d789d35a2c83,assets-production-1f203565-37a1-4c01-bf08-8a4645e0508c,293
+116,Bank of America : Adv Plus Banking 7688,"May 26, 2021 18:58","May 26, 2021 18:58",TRUE,c17f9a77-554d-410a-bf99-1c97ffff0fe5,assets-production-9376449c-4489-4a29-b461-0f02ea6d45bf,294
+117,Chime : Chime Checking 4837,"May 26, 2021 20:24","May 26, 2021 20:24",TRUE,1ddac2bf-be9b-4321-9dd0-00d2427a38f5,assets-production-c165daca-18b9-4d8e-9f70-6f10f8234a23,295
+172,TD Bank : TD SIMPLE CHECKING 4950,"May 30, 2021 21:08","March 08, 2022 12:33",TRUE,6db58c70-08cb-4bfa-9e6b-796aa565e5fc,assets-production-00b15118-c887-48fc-892a-2019883af606,297
+119,TD Bank : TD CONVENIENCE CHECKING 3866,"May 26, 2021 23:32","October 25, 2021 16:08",TRUE,48d12b67-c277-4ee0-b213-a47742cae763,assets-production-95d5e65a-e1e2-4ae5-ab16-8e50bc256f95,298
+120,Chime : Chime Checking 1139,"May 27, 2021 01:56","May 27, 2021 01:56",TRUE,35e5edea-072f-4b55-b737-e21819a1a4fb,assets-production-7515b1bb-24f5-40fb-93f6-329849ee2d3e,300
+217,Chase : TOTAL CHECKING 8301,"June 19, 2021 12:41","October 25, 2021 16:09",TRUE,a67de302-44fe-4aa1-b9bd-1ac7387e5ebb,assets-production-8936fb93-1455-4387-9d70-65253b22275d,301
+181,BMO Harris : Smart Advantage 3069,"June 08, 2021 16:27","June 09, 2021 12:44",TRUE,ab3fd103-9e47-4b24-90a2-aaef66e4e5d6,assets-production-19d0fb3d-2991-40b7-b3ca-1baa7fddb421,302
+177,Discover : CASHBACK DEBIT 9457,"June 03, 2021 03:37","March 12, 2022 12:33",TRUE,45541dc2-9f1f-4d7e-b219-464bc51d1e6f,assets-production-1299f746-fe14-4865-810c-698abcd0569a,303
+121,Bank of America : BajanLibra 4408,"May 27, 2021 13:38","July 02, 2021 12:39",TRUE,b547285a-2334-4eee-8638-cbd65cc0ced7,assets-production-0475d579-cd7f-495c-b145-30a2d70bfdab,304
+173,Bank of America : Adv Plus Banking 2749,"May 31, 2021 03:09","May 21, 2022 12:33",TRUE,cd771bf5-5e8c-4eee-9fdc-9acda80cc817,assets-production-b203f713-ba57-49fc-98a1-1185bb41ddfd,309
+122,Citibank Online : Checking - 5852 5852,"May 27, 2021 19:11","March 22, 2022 12:33",TRUE,9c5bef53-c10a-4d84-b0b7-7e955d17636e,assets-production-2bb28590-3141-49d3-9551-bb5d0b384330,311
+123,Chartway Federal Credit Union : LIVENOW ACCOUNT 9418,"May 27, 2021 21:25","May 27, 2021 21:25",TRUE,672f0323-b6df-405b-8e25-a44ff5992745,assets-production-057bab80-594f-4ac6-8d44-33b9ebba85cf,312
+124,Chime : Chime Checking 3843,"May 28, 2021 06:13","May 28, 2021 06:13",TRUE,2617ae06-eced-4d63-a6cb-ac7da10a5dc9,assets-production-15420a62-11c9-4dd3-b700-9d127fc7c206,315
+126,Navy Federal Credit Union : EveryDay Checking 4048,"May 28, 2021 21:25","July 31, 2021 21:23",FALSE,872feedf-a37e-49df-a603-80b0fb316374,assets-production-12e33794-e184-4804-a306-6382e47a4d98,316
+218,Navy Federal Credit Union : EveryDay Checking 8813,"June 27, 2021 14:14","July 31, 2021 21:23",TRUE,b72ae4bf-3962-4f11-a804-16aa60cd3c81,assets-production-e2122003-56f7-4c02-9859-6dcd17f8e66a,316
+179,Lili : Lili Banking 5664,"June 03, 2021 21:30","April 03, 2022 12:34",TRUE,387c918a-8b75-427b-a0eb-46a373bdbcff,assets-production-83d0cee9-8e04-4404-a5da-f2457f609fe2,317
+128,Bank of America : Adv Plus Banking 3623,"May 29, 2021 00:18","March 17, 2022 12:34",TRUE,f9e00dc0-b9c0-472a-abf1-44e6f95b3c00,assets-production-c14f59ff-40e3-4608-82b6-bf09a9b433f0,318
+166,Bethpage Federal Credit Union : Bonus Checking 9818,"May 30, 2021 03:35","May 30, 2021 12:38",TRUE,70f223a6-e4c1-4df4-b1cb-cfca14e533c7,assets-production-55c65a72-5981-4596-8d04-2ab4764b06b3,354
+162,KeyBank : Key Express Checking 0204,"May 29, 2021 15:20","May 29, 2021 15:20",TRUE,2b4bb5f5-eb5b-4178-842d-434e21d5b0f2,assets-production-4df070c0-8f45-407e-ace0-a1ba031c1ad8,355
+163,Chime : Chime Checking 1776,"May 29, 2021 17:00","May 29, 2021 17:00",TRUE,c7d6b852-59bf-491a-adac-347be5cac7b0,assets-production-bc61b154-2de4-410e-9a4e-83101e9621d9,356
+178,USAA : PATRICIA ORR 6489,"June 03, 2021 19:10","June 03, 2021 19:10",TRUE,3f3a556d-222b-410b-8bf8-ffa32ff1d4ba,assets-production-087ce404-b906-4e2c-9107-37ac5554b11d,357
+164,Bank of America : Adv SafeBalance Banking 7705,"May 29, 2021 21:34","October 25, 2021 16:08",TRUE,cd175614-0db4-4962-9e71-aa0c2ce684cf,assets-production-4e714f22-f031-4f30-a2ca-d554f5736db7,359
+176,Wells Fargo : BUSINESS CHECKING 8841,"June 02, 2021 21:09","June 02, 2021 21:09",TRUE,bd9495d7-818f-4a42-bf74-e65377f8e13a,assets-production-fabfe80b-226d-4ded-a05f-171d0d11d519,360
+168,Chime : Chime Checking 8182,"May 30, 2021 10:11","January 02, 2022 04:56",FALSE,8cc6c19d-b861-4f97-a034-6b603fa55244,assets-production-21484296-3ac9-44d0-af7e-7f4b9f2978fe,362
+219,Suncoast Credit Union : SMART CHECKING 4883,"June 29, 2021 12:17","July 29, 2021 18:10",FALSE,05a7c9a5-b6d9-4110-aa86-af0ca1c8facf,assets-production-72201356-3b08-458d-a4aa-47c7606c00ae,362
+262,SunTrust - Online Banking : Savings 7212,"September 09, 2021 00:46","January 02, 2022 04:56",TRUE,3a3ed537-c5c7-426d-a8e1-ac6e9d64702b,assets-production-d738d63e-15be-4000-8e69-b986bca237f5,362
+165,Chase : TOTAL CHECKING 3256,"May 30, 2021 03:12","October 19, 2021 12:37",TRUE,a889e1d0-462c-40ba-a89c-d1daca877382,assets-production-10a52bb9-8fdb-44e2-8d23-a715d9012251,364
+167,Bank of America : Frank Main Account 9071,"May 30, 2021 07:53","June 01, 2021 12:39",TRUE,1eff1cb5-b4dd-478a-9f8d-fd2b85aeb763,assets-production-6640086e-a754-4ee4-ae50-aa6ecf0353f9,366
+174,Bank of America : Adv Plus Banking 6253,"May 31, 2021 21:12","June 09, 2021 12:42",TRUE,1ef6a135-1fe3-41c8-b93d-4dd2114b9f56,assets-production-cf2fe8fa-6297-44e1-a57e-6d6e6493c0ff,367
+169,Chime : Chime Checking 9248,"May 30, 2021 19:15","July 17, 2021 12:37",TRUE,ab69373f-5e33-4493-9730-6a11b25d0d02,assets-production-d28d60b3-5c0c-4e60-8906-f8e8eb9f4065,370
