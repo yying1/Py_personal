@@ -12,4 +12,4 @@ Leanring/11663_AppliedML/Project/ginf.csv
 Learning/11663_AppliedML/Project/events.csv
 .DS_Store
 *env
-*/*ignore_data/*
+*/*ignore_data/
